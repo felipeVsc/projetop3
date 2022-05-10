@@ -7,26 +7,33 @@
 
 footer{
     background-color: var(--footer_header_color);
-    padding: 10px 0;
-    text-align: center;
-    position: fixed; 
+    text-align: center; 
     height: 60px; 
     width: 100%; 
     bottom: 0;
-
     font-family: var(--main-font-family);
     color: rgb(160, 159, 159);
+}
+
+
+.footer{
+    position: fixed;
+    padding: 50px;
 }
 
 .dropdown-item{
     font-family: var(--main-font-family);
 }
 
+.page-container{
+    padding-top: 150px;
+
+}
+
 #header-actions-dropdown{
     background-color: black;
     color: white;
-    padding: 0 50px;
-    height: 30px;    
+    width: 180px;
     font-family: var(--main-font-family);
 }
 

@@ -14,7 +14,6 @@ footer{
     background-color: var(--footer_header_color);
     padding: 10px 0;
     text-align: center;
-    position: fixed; 
     height: 60px; 
     width: 100%; 
     bottom: 0;
@@ -23,18 +22,25 @@ footer{
     color: hsl(0, 0%, 62%);
 }
 
+.footer{
+    padding: 50px;
+}
+
 .dropdown-item{
     font-family: var(--main-font-family);
 }
 
 #header-actions-dropdown{
     background-color: black;
-    color: hsl(0, 0%, 100%);
-    padding: 0 50px;
-    height: 30px;    
-    font-family: var(--main-font-family);
+    color: white;
+    width: 180px;
+    font-family: 'Roboto Flex', monospace !important;
 }
 
+.page-container{
+    padding-top: 150px;
+
+}
 .header-logo{
     font-weight: 700;
 }
