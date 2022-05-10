@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--HeaderFooter Style Sheet-->
+    <link href="maindashboard_style.css" rel="stylesheet">
+    
+    <!--Google Fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto+Mono:wght@700&display=swap');
+    </style>
+    <!--End of Google Fonts-->
+
+    <!--Bootstrap dependencies-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--End of Bootstrap dependencies-->
+    
+    <title>Meu@IC</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="header fixed-top d-flex p-4 px-md-5 mb-3 bg-light">
+        <!--Meu@IC logo-->
+        <div class="header-logo d-md-flex my-auto flex-grow-1">
+            <h2 class="mr-3 p-2">Meu@IC</h2>
+        </div>  
+        <!--End of Meu@IC logo--> 
+
+        <div class="d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
+            <!--Dropdown Ações Rápidas-->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-dark rounded-pill" type="button" id="header-actions-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ações rápidas
+                </button>
+                <div class="dropdown-menu" aria-labelledby="header-actions-dropdown">
+                  <a class="dropdown-item" href="#">Agendar um atendimento</a>                  
+                  <a class="dropdown-item" href="#">Configurações de perfil</a>
+                </div>
+            </div>
+            <!--End of Dropdown Ações Rápidas-->
+            
+            <!--Profile picture icon-->
+            <img class="rounded-circle m-auto" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40"> 
+            <!--End of Profile picture icon-->
+
+            
+        </div>          
+    </div>
+    <!--End of Header-->
+    
+
+    <!--Aqui vai o corpo da página-->
+    <div class="container page-container">
+        <h3 class="main-page-title">Dashboard de disciplinas</h3>
+
+        <!--carrossel 1º Periodo-->
+        <div class="periodos-containers container">
+            <h4 class="periodos_title">1º período</h4>
+            <div id="carrossel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row">
+
+                            <div class="col-md-4 col-lg-3">
+                                <div class="card" id="green-card">
+                                    <div class="card-body py-5 text-center">                
+                                        <h5 class="card-title">Programação 1</h5>                    
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3">
+                                <div class="card" id="aqua-card">
+                                    <div class="card-body py-5 text-center">                
+                                        <h5 class="card-title">Lógica para computação</h5>                    
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3">
+                                <div class="card" id="blue-card">
+                                    <div class="card-body py-5 text-center">                
+                                        <h5 class="card-title">Computação, Sociedade e Ética</h5>                    
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3">
+                                <div class="card" id="dark-card"S>
+                                    <div class="card-body py-5 text-center">                
+                                        <h5 class="card-title">Matemática Discreta</h5>                    
+                                        <a href="#" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>                           
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">    
+                        <div class="col-md-4 col-lg-3">
+                            <div class="card" id="dark-card">
+                                <div class="card-body py-5 text-center">                
+                                    <h5 class="card-title">Cálculo Diferencial e Integral</h5>                    
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                    
+                </div>
+
+                <a class="carousel-control-next" href="#carrossel" role="button" data-slide="next" id="carousel-control">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                    
+                </a>
+            </div>
+        </div>
+
+        <!--2 PERIODO-->
+        <div class="periodos-containers container">
+            <h4 class="periodos_title">2º período</h4>
+            <div class="row">
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="green-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Estrutura de Dados</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="green-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Banco de Dados</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="aqua-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Organização e Arquitetura de Computadores</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="dark-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Geometria Analítica</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>                           
+
+            </div>            
+        </div>
+
+        <!--3 PERIODO-->
+        <div class="periodos-containers container">
+            <h4 class="periodos_title">3º período</h4>
+            <div class="row">
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="aqua-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Redes de Computadores</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="dark-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Teoria dos Grafos</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="dark-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Álgebra Linear</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="dark-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Probabilidade e Estatística</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>                           
+
+            </div>            
+        </div>
+
+        <!--4 PERIODO-->
+        <div class="periodos-containers container">
+            <h4 class="periodos_title">4º período</h4>
+            <div class="row">
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="dark-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Projeto e Análise de Algoritmos</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="aqua-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Teoria da computação</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="green-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Programação 3</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="green-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Projeto de Software</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>                           
+
+            </div>            
+        </div>
+        
+         <!--Ênfase Sistemas de Informação-->
+         <div class="periodos-containers container">
+            <h4 class="periodos_title">Ênfase Sistemas de Informação</h4>
+            <div class="row">
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="blue-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Interação Homem-Máquina</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card" id="green-card">
+                        <div class="card-body py-5 text-center">                
+                            <h5 class="card-title">Ciência de Dados</h5>                    
+                            <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>                         
+
+            </div>            
+        </div>
+        
+    </div>
+
+    
+    
+    <!--Fim do corpo da página-->
+
+    <!--Footer-->
+    <div class="footer">
+        <footer class="footer mt-auto py-4 bg-light">
+            <p>©2022 Meu@IC. Todos os direitos reservados.</p>
+            </div>    
+        </footer>
+    </div>
+    <!--End of Footer-->
+
+    <!--Bootstrap dependencies-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--End of Bootstrap dependencies-->
+</body>
+</html>
