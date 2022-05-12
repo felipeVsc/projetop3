@@ -1,18 +1,16 @@
 .centralizarNomes{
     padding-left: 40% !important;
-    color: grey;
 }
 
 .buttonEntrar{
-    padding-right: 130px;
-    padding-left:130px;
+    width: 300px;
     background-color: #12E58D !important;
     border-color: #12E58D !important;
 }
 
 .inputsTexto{
-    padding-right: 60px !important;
-    padding-left:60px imr !important;
+    width: 300px;
+    height: 100px;
     border-color: #12E58D !important;
 }
 
@@ -25,4 +23,20 @@
     margin-top: 40%;
     font-size: 35px;
     margin-bottom: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+footer{
+    background-color: var(--footer_header_color);
+    text-align: center; 
+    height: 60px; 
+    width: 100%; 
+    bottom: 0;
+    font-family: var(--main-font-family);
+    color: rgb(160, 159, 159);
+}
+
+.footer{
+    position: fixed;
+    padding-top: 50px;
 }
