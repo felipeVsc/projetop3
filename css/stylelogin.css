@@ -1,0 +1,28 @@
+.centralizarNomes{
+    padding-left: 40% !important;
+    color: grey;
+}
+
+.buttonEntrar{
+    padding-right: 130px;
+    padding-left:130px;
+    background-color: #12E58D !important;
+    border-color: #12E58D !important;
+}
+
+.inputsTexto{
+    padding-right: 60px !important;
+    padding-left:60px imr !important;
+    border-color: #12E58D !important;
+}
+
+.bottomLine{
+    position: fixed;
+    bottom: 0;
+}
+
+.meuIc{
+    margin-top: 40%;
+    font-size: 35px;
+    margin-bottom: 0;
+}

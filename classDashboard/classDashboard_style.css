@@ -40,3 +40,13 @@ footer{
 .header-logo{
     font-family: var(--secondary-font-family);
 }
+
+.styleAc{
+    background-color: black !important;
+    border-radius: 15px !important;
+}
+
+.fontesLink{
+    color: white !important;
+    text-decoration: none !important;
+}
