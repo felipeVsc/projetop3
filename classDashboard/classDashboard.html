@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--HeaderFooter Style Sheet-->
+    <link href="classDashboard_style.css" rel="stylesheet">
+    
+    <!--Google Fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto+Mono:wght@700&display=swap');
+    </style>
+    <!--End of Google Fonts-->
+
+    <!--Bootstrap dependencies-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--End of Bootstrap dependencies-->
+    
+    <title>Meu@IC</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="header fixed-top d-flex p-4 px-md-5 mb-3 bg-light">
+        <!--Meu@IC logo-->
+        <div class="header-logo d-md-flex my-auto flex-grow-1">
+            <h2 class="mr-3 p-2">Meu@IC</h2>
+        </div>  
+        <!--End of Meu@IC logo--> 
+
+        <div class="d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
+            <!--Dropdown Ações Rápidas-->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-dark rounded-pill" type="button" id="header-actions-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ações rápidas
+                </button>
+                <div class="dropdown-menu" aria-labelledby="header-actions-dropdown">
+                  <a class="dropdown-item" href="#">Agendar um atendimento</a>                  
+                  <a class="dropdown-item" href="#">Configurações de perfil</a>
+                </div>
+            </div>
+            <!--End of Dropdown Ações Rápidas-->
+            
+            <!--Profile picture icon-->
+            <img class="rounded-circle m-auto" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40"> 
+            <!--End of Profile picture icon-->            
+        </div>          
+    </div>
+    <!--End of Header-->
+    
+    <!--Aqui vai o corpo da página-->  
+    <div class="container page-container">        
+        <!--NAO REMOVER ESSE DIV-->
+
+        <div class="row">
+            <div class="col-9">
+                <div>
+                    <div>
+                        <h4>Disciplina:</h4>
+                        <h3>Programação Web</h3>
+                    </div>
+
+                    <div id="accordion">
+            
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Listas de Exercícios
+                              </button>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+            
+                                <div class="card-group">
+            
+                                    <div class="card bg-light mb-3">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Telas frontend</h5>
+                                        <p class="card-text">Entregar primeira versão das telas em html/css.</p>
+                                        <p class="card-text"><small class="text-muted">Alguma observação</small></p>
+                                      </div>
+                                    </div>
+            
+                                    <div class="card bg-light mb-3">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Protótipos no Figma</h5>
+                                        <p class="card-text">Projetar as telas antes de codificar.</p>
+                                        <p class="card-text"><small class="text-muted">Observação qualquer</small></p>
+                                      </div>
+                                    </div>
+            
+                                    <div class="card bg-light mb-3">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Algum exercício qualquer</h5>
+                                        <p class="card-text">Estou sem ideia para escrever texto, aqui tem a descrição de uma atividade.</p>
+                                        <p class="card-text"><small class="text-muted">Vale nota para AB1</small></p>
+                                      </div>
+                                    </div>
+            
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Material complementar
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                
+                                <div class="card-group">
+            
+                                    <div class="card bg-light mb-3">
+                                      <div class="card-body">
+                                        <h5 class="card-title">PDF Tal coisa</h5>
+                                        <p class="card-text"><a href="#" class="stretched-link">Livro html para iniciantes.</a></p>
+                                        <p class="card-text"><small class="text-muted">Alguma observação</small></p>
+                                      </div>
+                                    </div>
+            
+                                    <div class="card bg-light mb-3">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Vídeo no youtube</h5>
+                                        <p class="card-text"><a href="#" class="stretched-link">Video aqui.</a></p>
+                                        <p class="card-text"><small class="text-muted">Observação qualquer</small></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Livros recomendados
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class = "card-group">
+                                    <div class="card bg-light mb-3" style="width: 18rem;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Css para iniciantes</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">Escritor: Y</h6>
+                                          <p class="card-text">Descrição do livro ou comentário do professor.</p>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="card bg-light mb-3" style="width: 18rem;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Html para iniciantes</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">Escritor: X</h6>
+                                          <p class="card-text">Descrição do livro ou comentário do professor.</p>
+                                        </div>
+                                      </div>
+            
+                                      <div class="card bg-light mb-3" style="width: 18rem;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Javascript para noobs</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">Escritor: Z</h6>
+                                          <p class="card-text">Descrição do livro ou comentário do professor.</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px">
+                    <button type="button" class="btn btn-success mb-3">Ver horários</button>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div class="w-75 d-flex justify-content-around align-items-center">
+                            <img class="rounded-circle" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40">
+                            <div>
+                                <h5>Jade picon</h5> 
+                                <h6>jadepicon@ic.ufal.br</h6>  
+                            </div>
+                        </div>
+                              
+                        <div class="w-75 d-flex justify-content-around align-items-center">
+                            <img class="rounded-circle" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40">
+                            <div>
+                                <h5>Jade picon</h5> 
+                                <h6>jadepicon@ic.ufal.br</h6>  
+                            </div>
+                        </div>
+                    </div>         
+                </div>          
+            </div>
+        </div>
+    </div>
+    <!--Fim do corpo da página-->
+
+    
+    <!--Footer-->
+    <div class="footer">
+        <footer class="footer mt-auto py-4 bg-light">
+            <p>©2022 Meu@IC. Todos os direitos reservados.</p>
+            </div>    
+        </footer>
+    </div>
+    <!--End of Footer-->
+
+    <!--Bootstrap dependencies-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--End of Bootstrap dependencies-->
+</body>
+</html>
