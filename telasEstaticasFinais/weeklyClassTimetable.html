@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--HeaderFooter Style Sheet-->
-    <link href="timetableStyle.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,15 +32,26 @@
 
         <div class="d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
             <!--Dropdown Ações Rápidas-->
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle btn-dark rounded-pill" type="button" id="header-actions-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Ações rápidas
-                </button>
-                <div class="dropdown-menu" aria-labelledby="header-actions-dropdown">
-                  <a class="dropdown-item" href="#">Agendar um atendimento</a>                  
-                  <a class="dropdown-item" href="#">Configurações de perfil</a>
-                </div>
-            </div>
+			<button class="btn rounded-pill topbar_button dark" type="button">
+				<div class="material-icons">
+                    event
+				</div>
+				&nbsp;Disciplinas
+			</button>
+
+			<button class="btn rounded-pill topbar_button blue" type="button">
+				<div class="material-icons">
+                    event
+				</div>
+				&nbsp;Atividades
+			</button>
+
+			<button class="btn rounded-pill topbar_button dark" type="button">
+				<div class="material-icons">
+                    event
+				</div>
+				&nbsp;Agendar
+			</button>
             <!--End of Dropdown Ações Rápidas-->
             
             <!--Profile picture icon-->
