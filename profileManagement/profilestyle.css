@@ -1,0 +1,110 @@
+:root{
+    --footer_header_color: #f8f9fa;
+    --backup: #f8f9fa;
+    --main-font-family: 'Roboto Flex', monospace;
+    --secondary-font-family: 'Roboto Mono', monospace;
+}
+
+
+
+footer{
+    background-color: var(--footer_header_color);
+    text-align: center; 
+    height: 60px; 
+    width: 100%; 
+    bottom: 0;
+    font-family: var(--main-font-family);
+    color: rgb(160, 159, 159);
+}
+
+
+.footer{
+    position: fixed;
+    padding: 50px;
+}
+
+.dropdown-item{
+    font-family: var(--main-font-family);
+}
+
+.page-container{
+    padding-top: 150px;
+
+}
+
+#header-actions-dropdown{
+    background-color: black;
+    color: white;
+    width: 180px;
+    font-family: var(--main-font-family);
+}
+
+.header-logo{
+    font-family: var(--secondary-font-family);
+}
+
+.centralizarNomes{
+    padding-left: 40% !important;
+}
+
+.buttonEntrar{
+    width: 300px;
+    background-color: #12E58D !important;
+    border-color: #12E58D !important;
+}
+
+.inputsTexto{
+    width: 300px !important;
+    height: 100px;
+    border-color: #12E58D !important;
+}
+
+.bottomLine{
+    position: fixed;
+    bottom: 0;
+}
+
+.meuIc{
+    margin-top: 40%;
+    font-size: 35px;
+    margin-bottom: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+footer{
+    background-color: var(--footer_header_color);
+    text-align: center; 
+    height: 60px; 
+    width: 100%; 
+    bottom: 0;
+    font-family: var(--main-font-family);
+    color: rgb(160, 159, 159);
+}
+
+.footer{
+    position: fixed;
+    padding-top: 50px;
+}
+
+.fonteCorDiferente{
+    color: #ADAAAA;
+}
+
+.botoesLinkTexto{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.robotoMono{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.robotoFlex{
+    font-family: 'Roboto Flex', monospace;
+}
+
+.coluna2{
+    margin-left: 20% !important;
+    margin-top: 2% !important;
+}

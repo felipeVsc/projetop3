@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--HeaderFooter Style Sheet-->
+    <link href="profilestyle.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto+Mono:wght@700&display=swap');
+    </style>
+    <!--End of Google Fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!--Bootstrap dependencies-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--End of Bootstrap dependencies-->
+
+    <title>Meu@IC</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header fixed-top d-flex p-4 px-md-5 mb-3 bg-light">
+        <!--Meu@IC logo-->
+        <div class="header-logo d-md-flex my-auto flex-grow-1">
+            <h2 class="mr-3 p-2">Meu@IC</h2>
+        </div>
+        <!--End of Meu@IC logo-->
+
+       
+    </div>
+    <!--End of Header-->
+
+    <!--Aqui vai o corpo da página-->
+    <div class="container page-container">
+        <!--NAO REMOVER ESSE DIV-->
+        <!-- Começando aqui a parte de profile -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="d-flex align-items-center flex-column">
+                        <div class="p-2">
+                            <p
+                                style="margin-top: 55%; font-size: 35px; margin-bottom: 0; font-family: 'Roboto Flex', monospace;">
+                                Conclua seu cadastro</p>
+                        </div>
+                        <div class="p-2">
+                            <div class="form-floating mb-4">
+                                <input type="email" class="form-control rounded-pill inputsTexto " style="border-radius: 20px !important;" id="userInput"
+                                    placeholder="usuario">
+                                <label for="userInput" class="centralizarNomes align-items-center" style="color: grey;">Matrícula</label>
+                            </div>
+                            <div class="form-floating" style="margin-left: 30%;">
+                                <div class="form-check">
+                                    <input class="form-check-input" style="border-color: #12E58D;" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label robotoMono" for="flexCheckDefault">
+                                        Sou professor
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="p-2">
+                            <button class="btn btn-primary rounded-pill buttonEntrar" type="button">
+                                <a href="maindashboard/maindashboard.html" class="botoesLinkTexto">Entrar</a>
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col coluna2" >
+                    <div class="d-flex align-items-center flex-column" style="margin-top: 35%;">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                    <!-- quando for botar uma foto tem que refazer essa parte
+                                    porque tem que ver a questao de round da imagem e etc-->
+                                        <span class="material-icons" style="font-size: 100px; margin-top: 20%;">
+                                            account_circle
+                                        </span>
+                                    
+                                </div>
+                                <div class="col" style="margin-top: 20px;">
+                                    <div class="robotoMono">Nome:</div>
+                                    <p id="nomeUser" class="fonteCorDiferente robotoFlex">Jade Picon</p>
+                                    <div class="robotoMono">Email:</div>
+
+                                    <p id="emailUser" class="fonteCorDiferente robotoFlex">picon@ic.ufal.br</p>
+                                    
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Termina aqui a parte de profile -->
+        </div>
+        <!--Fim do corpo da página-->
+
+
+        <!--Footer-->
+    </div>
+        <div class="footer">
+            <footer class="footer mt-auto py-4 bg-light">
+                <p>©2022 Meu@IC. Todos os direitos reservados.</p>
+        </div>
+        </footer>
+    <!--End of Footer-->
+
+    <!--Bootstrap dependencies-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--End of Bootstrap dependencies-->
+</body>
+
+</html>
