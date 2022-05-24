@@ -37,7 +37,6 @@
 
     <!--Aqui vai o corpo da página-->
     <div class="container page-container">
-        <!--NAO REMOVER ESSE DIV-->
 
         <!-- Começando aqui a parte de profile -->
         <div class="container">
@@ -55,7 +54,7 @@
                                     placeholder="usuario">
                                 <label for="userInput" class="align-items-center" style="color: grey;">Matrícula/SIAPE</label>
                             </div>
-                            <div class="form-floating">
+                            <div class="form-floating professorCheckbox">
                                 <div class="form-check">
                                     <input class="form-check-input" style="border-color: #12E58D;" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
@@ -73,18 +72,14 @@
                                 </button>
                             </a>
                         </div>
-
-
                     </div>
                 </div>
-                <div class="col coluna2" >
+                <div class="col coluna2 justify-content-start" >
                     <div class="d-flex flex-column">
                         
                             <div class="row">
-                                <div class="col col-sm-3 align-items-center">
-                                    <!-- quando for botar uma foto tem que refazer essa parte
-                                    porque tem que ver a questao de round da imagem e etc-->
-                                    <img class="rounded-circle m-auto" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="100px" height="100px">    
+                                <div class="col align-items-center profilepicture col-3">                                    
+                                    <img class="rounded-circle m-auto" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg"  width="110px" height="110px">    
                                 </div>
                                 <div class="col" style="margin-top: 20px;">
                                     <div class="robotoMono">Nome</div>
@@ -101,15 +96,15 @@
             <!-- Termina aqui a parte de profile -->
         </div>
         <!--Fim do corpo da página-->
-
-
-        <!--Footer-->
     </div>
-        <div class="footer">
-            <footer class="footer mt-auto py-4 bg-light">
-                <p>©2022 Meu@IC. Todos os direitos reservados.</p>
-        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <footer class="footer mt-auto py-4 bg-light">
+            <p>©2022 Meu@IC. Todos os direitos reservados.</p>
         </footer>
+    </div>
     <!--End of Footer-->
 
     <!--Bootstrap dependencies-->
@@ -123,6 +118,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <!--End of Bootstrap dependencies-->
+    
 </body>
 
 </html>

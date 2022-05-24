@@ -15,10 +15,6 @@ footer{
     bottom: 0;
     font-family: var(--main-font-family);
     color: rgb(160, 159, 159);
-}
-
-
-.footer{
     position: fixed;
     padding: 50px;
 }
@@ -29,9 +25,14 @@ footer{
 
 .page-container{
     padding-top: 150px;
-
 }
-
+.page-container:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+}
 #header-actions-dropdown{
     background-color: black;
     color: white;
@@ -103,6 +104,16 @@ footer{
 }
 
 .coluna2{
-    margin-left: 20% !important;
     margin-top: 2% !important;
+}
+
+.profilepicture{
+    display: flex; 
+    flex-direction: column;    
+}
+
+.professorCheckbox{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }

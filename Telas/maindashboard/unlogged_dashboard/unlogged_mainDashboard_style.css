@@ -103,12 +103,6 @@ footer{
     padding: 5%;
 }
 
-.dashboard-card:hover{
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-
 
 .card-rightspace{
     margin-right: 0.30rem;
