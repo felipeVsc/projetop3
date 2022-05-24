@@ -51,6 +51,7 @@ footer{
     width: 300px;
     background-color: #12E58D !important;
     border-color: #12E58D !important;
+    border-radius: 10px !important;
 }
 
 .inputsTexto{
@@ -96,9 +97,6 @@ footer{
     
 }
 
-.robotoMono{
-    font-family: 'Roboto Mono', monospace;
-}
 
 .robotoFlex{
     font-family: 'Roboto Flex', monospace;

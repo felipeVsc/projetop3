@@ -31,37 +31,34 @@
         <div class="header-logo d-md-flex my-auto flex-grow-1">
             <h2 class="mr-3 p-2">Meu@IC</h2>
         </div>
-        <!--End of Meu@IC logo-->
-
-       
+        <!--End of Meu@IC logo-->       
     </div>
     <!--End of Header-->
 
     <!--Aqui vai o corpo da página-->
     <div class="container page-container">
         <!--NAO REMOVER ESSE DIV-->
-        <!-- Começando aqui a parte de profile -->
 
+        <!-- Começando aqui a parte de profile -->
         <div class="container">
             <div class="row">
                 <div class="col">
-
                     <div class="d-flex align-items-center flex-column">
-                        <div class="p-2">
-                            <p
-                                style="margin-top: 55%; font-size: 35px; margin-bottom: 0; font-family: 'Roboto Flex', monospace;">
-                                Conclua seu cadastro</p>
+                        <div class="p-4">
+                            <p style="font-size: 35px; margin-bottom: 0; font-family: 'Roboto Flex', monospace;">
+                                Conclua seu cadastro
+                            </p>
                         </div>
                         <div class="p-2">
                             <div class="form-floating mb-4">
-                                <input type="email" class="form-control rounded-pill inputsTexto " style="border-radius: 20px !important;" id="userInput"
+                                <input type="email" class="form-control rounded-pill inputsTexto" style="border-radius: 20px !important;" id="userInput"
                                     placeholder="usuario">
-                                <label for="userInput" class="centralizarNomes align-items-center" style="color: grey;">Matrícula</label>
+                                <label for="userInput" class="align-items-center" style="color: grey;">Matrícula/SIAPE</label>
                             </div>
-                            <div class="form-floating" style="margin-left: 30%;">
+                            <div class="form-floating">
                                 <div class="form-check">
                                     <input class="form-check-input" style="border-color: #12E58D;" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label robotoMono" for="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
                                         Sou professor
                                     </label>
                                 </div>
@@ -70,40 +67,34 @@
                         </div>
 
                         <div class="p-2">
-                            <button class="btn btn-primary rounded-pill buttonEntrar" type="button">
-                                <a href="maindashboard/maindashboard.html" class="botoesLinkTexto">Entrar</a>
-                            </button>
+                            <a href="../maindashboard/mainDashboard.html">
+                                <button class="buttonEntrar btn btn-primary " type="button">
+                                    Entrar
+                                </button>
+                            </a>
                         </div>
 
 
                     </div>
                 </div>
                 <div class="col coluna2" >
-                    <div class="d-flex align-items-center flex-column" style="margin-top: 35%;">
-
-                        <div class="container">
+                    <div class="d-flex flex-column">
+                        
                             <div class="row">
-                                <div class="col-6 col-sm-3">
+                                <div class="col col-sm-3 align-items-center">
                                     <!-- quando for botar uma foto tem que refazer essa parte
                                     porque tem que ver a questao de round da imagem e etc-->
-                                        <span class="material-icons" style="font-size: 100px; margin-top: 20%;">
-                                            account_circle
-                                        </span>
-                                    
+                                    <img class="rounded-circle m-auto" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="100px" height="100px">    
                                 </div>
                                 <div class="col" style="margin-top: 20px;">
-                                    <div class="robotoMono">Nome:</div>
-                                    <p id="nomeUser" class="fonteCorDiferente robotoFlex">Jade Picon</p>
-                                    <div class="robotoMono">Email:</div>
+                                    <div class="robotoMono">Nome</div>
+                                    <p id="nomeUser" class="fonteCorDiferente robotoFlex">Fulano de Tal</p>
+                                    <div class="robotoMono">Email</div>
 
-                                    <p id="emailUser" class="fonteCorDiferente robotoFlex">picon@ic.ufal.br</p>
-                                    
+                                    <p id="emailUser" class="fonteCorDiferente robotoFlex">fdt@ic.ufal.br</p>                                    
                                 </div>
                             </div>
-
-
-
-                        </div>
+                        
                     </div>
                 </div>
             </div>
