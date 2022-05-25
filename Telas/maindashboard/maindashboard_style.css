@@ -1,6 +1,6 @@
 :root{
     --footer_header_color: hsl(210, 17%, 98%);
-    --backup: hsl(210, 17%, 98%);
+    --backup: hwb(210 98% 2%);
  
     --main-font-family: 'Roboto Flex', monospace;
     --secondary-font-family: 'Roboto Mono', monospace;
@@ -9,6 +9,7 @@
 body{
     --timeslot-base: 4rem;
     --timeslot-space: 0.5rem;
+    
 }
 
 footer{
@@ -60,6 +61,7 @@ footer{
 	align-items: center !important;
 	padding-left: 20px;
 	padding-right: 20px;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 .timeslot, .timeslot-card, .dashboard-card, .timeslot-1, .timeslot-2, .timeslot-3, .timeslot-4, .timeslot-5, .timeslot-6{
