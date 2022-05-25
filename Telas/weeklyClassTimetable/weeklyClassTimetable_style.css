@@ -199,3 +199,21 @@ footer{
 .icon-lg{
 	font-size: 4rem;
 }
+
+.meuModal{
+    width: 1200px;
+    margin: auto;
+}
+
+.selectModal{
+    display: flex;
+    justify-content: "space-between";
+    align-items: center
+}
+.buttonEntrar{
+    align-self: center;
+    width: 200px;
+    background-color: #12E58D !important;
+    border-color: #12E58D !important;
+    border-radius: 10px !important;
+}
