@@ -73,62 +73,108 @@
                     </a>
                 </div>
                 <div class="col-10 col-md-11">                    
-                    <h5 class="m-0 mb-1 row main-page-title">
-                        Agendamento de horário
-                    </h5>
+                    
                     <h4 class="m-0 mb-1 row discipline-title">
-                        Projeto e Análise de Algoritmos
+                        Agendamento de Horário
                     </h4>
                 </div>
             </div>
 
         <!--Form-->
-        <div style="display: flex;">
+        <div style="justify-content: center !important; margin-left: 25%;">
             <form class="form-floating">
-                <div class="formgroup">
-                    <div class="form-group col-md-6 formSpace">
-                        <input type="date" class="form-control" id="datamonitoria" placeholder="Data">
-                        <label for="datamonitoria" class="col-sm-2 col-form-label col-form-label-sm">Data</label>
-                    </div>
-                    <div class="form-group col-md-4 formSpace">
-                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Horário</label>
-                        <select id="horario" class="form-control" >
-                            <option selected>Escolher horario</option>
-                            <option>13:30 - 14:20</option>
-                            <option>14:20 - 15:10</option>
-                            <option>15:20 - 16:10</option>
-                            <option>16:10 - 17:00</option>
-                            <option>17:10 - 18:00</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group col-md-6 formSpace">
-                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm formColor">Aluno</label>
-                        <input type="input" class="form-control" id="alunoSolicitante" placeholder="Maria Joaquina" disabled>
-                    
-                    </div>
-                    <div class="form-group col-md-6 formSpace">
-                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Local</label>
-                        <select id="local" class="form-control" >
-                            <option selected>Escolher local</option>
-                            <option >Google meet</option>
-                            <option>Presencial</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6 formSpace">
-                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Tópico</label>
-                        <select id="topico" class="form-control" >
-                            
-                            <option selected>Escolher topico</option>
-                            <option>Notação BIG O</option>
-                            <option>Divisão e conquista</option>
-                            <option>Algoritmos Gulosos</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6 formSpace">
-                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm formColor">Disciplina</label>
-                        <input type="input" class="form-control" id="alunoSolicitante" placeholder="Projeto e Análise de Algoritmos" disabled>
-                    </div>
+                <div class="formgroup" style="padding-left: 50px !important;">
+                   <div class="container " >
+                        <div class="row">
+                            <div class="form-floating mb-4">
+                                <select class="form-select inputsTexto2 inputsTexto" id="inputGroupDisciplina">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+
+                                  
+                                <label for="inputGroupDisciplina" class="align-items-center labelInput" style="color: grey;">Disciplina</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mb-4">
+                                    <input type="date" class="form-control inputsTexto2 inputsTexto" style="border-radius: 20px !important;" id="dataInput"
+                                        value="2022-01-01">
+                                    <label for="dataInput" class="align-items-center" style="color: grey;">Data</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating mb-4">
+                                    
+
+                                    <select class="form-select inputsTexto2 inputsTexto" id="inputGroupHorario">
+                                        <option selected>Choose...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+
+                                      
+                                    <label for="inputGroupHorario" class="align-items-center" style="color: grey;">Horário</label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-floating mb-4">
+                                <input type="input" class="inputsTexto2 form-control  inputsTexto "  id="inputMonitor"
+                                    value="Taigo Pedrosa" disabled>
+                                <label for="inputMonitor" class="align-items-center labelInput" style="color: grey;">Monitor</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-floating mb-4">
+                                <select class="form-select inputsTexto2 inputsTexto" id="inputTopicosDisciplina">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+
+                                  
+                                <label for="inputTopicosDisciplina" class="align-items-center labelInput" style="color: grey;">Tópico</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-floating mb-4">
+                                <input type="input" class="form-control inputsTexto2 inputsTexto" style="border-radius: 20px !important;" id="inputAnotacoes"
+                                    placeholder="usuario">
+                                <label for="inputAnotacoes" class="align-items-center labelInput" style="color: grey;">Anotações</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-floating mb-4">
+                                <div class="alert alert-secondary alertaLocal"  role="alert">
+                                    <div class="container">
+                                        <div class="row align-items-center">
+                                            <div class="col col-lg-2">
+                                                <span class="material-icons" style="color: #12E58D;">
+                                                    video_call
+                                                </span>
+                                            </div>
+                                            <div class="col">
+                                                O atendimento será realizado via:
+                                                <p id="localAtendimento" style="font-weight: bold;">
+                                                    Google Meet
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                  </div>
+                            </div>
+                        </div>
+
+
+                   </div>
                 </div>
 
                 <button type="submit" class="buttonEntrar buttonAlign btn btn-primary" type="button">
@@ -137,38 +183,7 @@
 
             </form>
 
-            <div class="my-3 my-sm-5 row " style="width: 33.3%;margin-left: 25%;">
-                <div class="row timeslot timeslot-2" style="margin-left: 70%;">
-                    <div class="timeslot-card timeslot-card-2 gray card-rightspace">
-
-                    </div>
-                    <div class="timeslot-card timeslot-card-2 gray">
-
-                    </div>
-                </div>
-                <div class="row timeslot timeslot-2">
-                    <div class="timeslot-card timeslot-card-2 gray card-rightspace" style="width: 0.15rem;">
-
-                    </div>
-                    <div class="timeslot-card timeslot-card-2 gray">
-
-                    </div>
-                    <div class="timeslot-card timeslot-card-2 green" style="margin-left: 40%">
-
-                    </div>
-                </div>
-                <div class="row timeslot timeslot-2">
-                    <div class="timeslot-card timeslot-card-2 gray card-rightspace" style="width: 0.15rem;">
-
-                    </div>
-                    <div class="timeslot-card timeslot-card-2 gray">
-
-                    </div>
-                    <div class="timeslot-card timeslot-card-2 gray " style="margin-left: 40%;align-self: left;">
-
-                    </div>
-                </div>
-            </div>
+            
             </div>
         </div>
     </div>

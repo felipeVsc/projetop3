@@ -236,4 +236,27 @@ footer{
     padding: 0 70px;
 }
 
+/*
+Esse inputsTexto é diferente dos outros, esse tem tamanho 450.
+*/
+.inputsTexto{
+    width: 450px !important;
+    height: 100px;
+    border-color: #12E58D !important;
+}
 
+.inputsTexto2{
+    border-radius: 20px !important;
+}
+
+.labelInput{
+    margin-left: 12px;
+    color: grey !important;
+}
+
+.alertaLocal{
+    width: 450px;
+    background-color: #EEEEEE !important;
+    border-radius: 20px !important;
+    border-width: 0px !important;
+}
