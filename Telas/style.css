@@ -418,5 +418,43 @@ footer{
 
 .modal-title{
     padding: 20px 0;
+    padding-top: 0px !important;
     text-align: center;
+}
+
+.modal-border{
+    border-radius: 27px !important;
+    border-style: none !important;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.inputHoraEsquerda{
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-style: none;
+}
+
+.inputHoraDireita{
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-style: none;
+}
+
+.inputHoraPill{
+    width:450px;
+    height: 40px;
+    margin-left: 10px;
+    border-width: 0.5px;
+    border-style: double;
+    border-color: #ced4da;
+}
+
+.selectLocal{
+    width: 400px !important;
+    margin-left: 10px !important;
 }
