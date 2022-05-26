@@ -75,14 +75,16 @@
         <div style="justify-content: center !important; margin-left: 25%;">
             <form class="form-floating">
                 <div class="formgroup" style="padding-left: 50px !important;">
-                <div class="container " >
+                    <div class="container " >
                         <div class="row">
                             <div class="form-floating mb-4">
                                 <select class="form-select inputsTexto2 inputsTexto" id="inputGroupDisciplina">
-                                    <option selected>Choose...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option selected>Selecione a disciplina</option>
+                                    <option value="1">Projeto e Análise de Algoritmos</option>
+                                    <option value="2">Teoria dos Grafos</option>
+                                    <option value="3">Programação 1</option>
+                                    <option value="4">Projeto de Software</option>
+                                    <option value="5">Cálculo Diferencial e Integral</option>
                                 </select>
 
                                 
@@ -98,25 +100,21 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="form-floating mb-4">
-                                    
+                                <div class="form-floating mb-4">                                    
 
                                     <select class="form-select inputsTexto2 inputsTexto" id="inputGroupHorario">
-                                        <option selected>Choose...</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option selected>Escolha um horário</option>
+                                        <option value="1">14:20 - 15:10</option>
+                                        <option value="2">15:10 - 17:00</option>
                                     </select>
-
                                     
                                     <label for="inputGroupHorario" class="align-items-center" style="color: grey;">Horário</label>
-
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-floating mb-4">
-                                <input type="input" class="inputsTexto2 form-control  inputsTexto "  id="inputMonitor"
+                                <input type="input" class="inputsTexto2 form-control  inputsTexto"  id="inputMonitor"
                                     value="Taigo Pedrosa" disabled>
                                 <label for="inputMonitor" class="align-items-center labelInput" style="color: grey;">Monitor</label>
                             </div>
@@ -124,12 +122,11 @@
                         <div class="row">
                             <div class="form-floating mb-4">
                                 <select class="form-select inputsTexto2 inputsTexto" id="inputTopicosDisciplina">
-                                    <option selected>Choose...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                    <option selected>Selecione o tópico a ser tratado</option>
+                                    <option value="1">Tópico 1</option>
+                                    <option value="2">Tópico 2</option>
+                                    <option value="3">Tópico 3</option>
                                 </select>
-
                                 
                                 <label for="inputTopicosDisciplina" class="align-items-center labelInput" style="color: grey;">Tópico</label>
                             </div>
@@ -153,9 +150,9 @@
                                             </div>
                                             <div class="col">
                                                 O atendimento será realizado via:
-                                                <p id="localAtendimento" style="font-weight: bold;">
+                                                <a id="localAtendimento" style="font-weight: bold;">
                                                     Google Meet
-                                                </p>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -164,20 +161,25 @@
                             </div>
                         </div>
 
+                        <div class="row">
+                            <div class="teste form-floating mb-4">
+                                <button  class="buttonAgendar btn btn-primary" type="button" onclick="window.location = '../weeklyClassTimetable/weeklyClassTimetable.html'">
+                                    Agendar
+                                </button>
+                            </div>
+                        </div>
 
-                </div>
+                    </div>
                 </div>
 
-                <button type="submit" class="buttonEntrar buttonAlign btn btn-primary" type="button">
-                    Agendar
-                </button>
+                
             </form>
         </div>
     </div>
     <!--Fim do corpo da página-->
 
     <!--Footer-->
-    <div class="footer_div">
+    <div class="footer">
         <footer class="footer mt-auto py-4 bg-light">
             <p>©2022 Meu@IC. Todos os direitos reservados.</p>  
         </footer>

@@ -30,7 +30,7 @@ footer{
     color: hsl(0, 0%, 62%);
 }
 
-.footer{ padding: 50px; }
+.footer{ margin-top: 50px; }
 
 
 .page-container{ padding-top: 150px; }
@@ -39,6 +39,14 @@ footer{
 
 
 /* Begins: Main Dashboard Specifics */
+.periodos_title{
+    padding: 10px;
+}
+
+.periodos-containers{
+    padding: 15px;
+}
+
 .dashboard-card{
 	display: flex;
     border-radius: 1rem !important;
@@ -55,19 +63,24 @@ footer{
 }
 /* Ends: Main Dashboard Specifics */
 
-
+/*Begins: Main Dashboard Unlooged Specifics*/
+.dashboard-unlogged-card{
+	display: flex;
+    border-radius: 1rem !important;
+    height: 100%;
+	box-shadow:  5px 10px 10px rgba(71, 71, 74, 0.184);
+    padding: 5%;
+    transition: all 0.3s ease-in-out;
+}
+/*Ends: Main Dashboard Unlooged Specifics*/
 
 /* Begins: Book Timeslot Specifics */
-.buttonAlign{
-    margin-top: 10px;
-    margin-left: 200px;   
-}
-
-.buttonEntrar{
-    width: 200px;
+.buttonAgendar{
     background-color: #12E58D !important;
     border-color: #12E58D !important;
-    border-radius: 10px !important;
+    border-radius: 20px !important;
+    height: 40px;
+    width: 450px;
 }
 
 .formgroup{ padding: 0 70px; }
@@ -97,7 +110,22 @@ footer{
 
 
 
-/**/
+/*Weekly Class TimeTable*/
+.editarHorarioButtonDiv{
+    position: fixed;
+    bottom: 3%;
+    right:5%;
+    margin: 20px;
+}
+
+.editarHorarioButton{
+    display: flex !important;
+	align-content: center !important;
+	align-items: center !important;
+
+    box-shadow:  5px 5px 5px rgba(71, 71, 74, 0.184);
+}
+
 .discipline-title{
     font-weight: 500;
     color:hsl(0, 0%, 62%);
@@ -129,7 +157,7 @@ footer{
     width: 100%;
 }
 
-.timeslot, .slot-card, .dashboard-card{
+.timeslot, .slot-card, .dashboard-card, .dashboard-unlogged-card{
     justify-content: center !important;
     align-items: center !important;
 	text-align: center;
@@ -386,4 +414,9 @@ footer{
     background-color: #12E58D !important;
     border-color: #12E58D !important;
     border-radius: 10px !important;
+}
+
+.modal-title{
+    padding: 20px 0;
+    text-align: center;
 }

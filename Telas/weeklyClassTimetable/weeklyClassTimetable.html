@@ -30,7 +30,7 @@
         </div>  
         <!--End of Meu@IC logo--> 
 
-        <div class="header-buttons d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
+        <div class="d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
             <!--Botoes Header-->
 			<button class="btn rounded-pill topbar_button blue" type="button" onclick="window.location = '../classDashboard/classDashboard.html'">
 				<div class="material-icons">
@@ -226,14 +226,21 @@
     
     
         </div>
+
+        <div class="editarHorarioButtonDiv justify-content-end">
+            <button class="editarHorarioButton btn rounded-pill white" type="button"  data-toggle="modal" data-target="#exampleModalScrollable">
+                <div class="px-1">
+                    <div class="material-icons">
+                        edit
+                    </div>
+                </div>
+                &nbsp;Editar meu horario
+            </button>
+        </div>
+
     </div>
     <!--Fim do corpo da página-->
-  <!-- Button trigger modal -->
-<div style="align-self: left;">
-    <button type="button" class="btn buttonEntrar" data-toggle="modal" data-target="#exampleModalScrollable">
-        Editar meu horário
-      </button>
-</div>
+
   
   <!-- Modal -->
   <div class="modal fade meuModal" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -360,10 +367,12 @@
   </div>
     <!--fim do modal-->
     <!--Footer-->
-    <footer class="footer mt-auto py-3 bg-light">
-        <p>©2022 Meu@IC. Todos os direitos reservados.</p>
-        </div>    
-    </footer>
+    <div class="footer">
+        <footer class="footer mt-auto py-3 bg-light">
+            <p>©2022 Meu@IC. Todos os direitos reservados.</p>
+            </div>    
+        </footer>
+    </div>
     <!--End of Footer-->
 
     <!--Bootstrap dependencies-->
