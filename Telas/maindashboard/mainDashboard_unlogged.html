@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Style Sheet-->
-    <link href="unlogged_mainDashboard_style.css" rel="stylesheet">
+	<link href="../style.css" rel="stylesheet">
     
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--End of Google Fonts-->
 
@@ -23,24 +23,23 @@
 </head>
 <body>
     <!--Header-->
-    <div class="header fixed-top d-flex p-4 px-md-5 mb-3 bg-light">
+	<div class="header fixed-top d-flex p-4 px-md-5 mb-3 bg-light">
         <!--Meu@IC logo-->
         <div class="header-logo d-md-flex my-auto flex-grow-1">
-            <h2 class="mr-3 p-2">Meu@IC</h2>
+            <h2 class="mr-3 p-2" onclick="window.location = '../maindashboard/mainDashboard.html'">Meu@IC</h2>
         </div>  
         <!--End of Meu@IC logo--> 
 
         <div class="header-buttons d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
             <!--Botoes Header-->
 			<a href="../../profileManagement/profile.html" style="text-decoration:none">
-				<button class="topbar_button btn rounded-pill" type="button">
+				<button class="topbar_button btn rounded-pill white" type="button">
 					<div class="px-1">
 						<img class="rounded-circle m-auto" src="https://logopng.com.br/logos/google-37.png" width="20" height="20"> 
 					</div>
 					&nbsp;Login with Google
 				</button>
-			</a>
-            <!--End of Botoes Header-->          
+			</a>          
         </div>          
     </div>
     <!--End of Header-->
@@ -48,7 +47,18 @@
 
     <!--Aqui vai o corpo da página-->
     <div class="container page-container">
-        <h3 class="main-page-title">Dashboard de disciplinas</h3>
+        <div class="row align-items-center py-4">
+            <div class="col-2" style="width: min-content;">
+				<button type="button" class="btn btn-dark material-icons" disabled style="background: #212529 !important; opacity: 1 !important;">
+					home
+				</button>
+            </div>
+            <div class="col-10 col-md-11">
+                <h4 class="m-0 mb-1 row discipline-name">
+                    Dashboard de Disciplinas
+                </h4>
+            </div>
+        </div>
 
         <!--carrossel 1º Periodo-->
         <div class="periodos-containers container">
@@ -58,26 +68,30 @@
                     <div class="carousel-item active">
                         <div class="row" style="margin-left: 40px; margin-right:40px;">
                             <div class="col-md-4 col-lg-3 pt-2 pb-3">
-                                <div class="card dashboard-card timeslot-2 green">
+                                <div class="card dashboard-card slot-2 green">
 									<h5 class="card-title">Programação 1</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
                                 </div>
                             </div>
 
                             <div class="col-md-4 col-lg-3 pt-2 pb-3">
-                                <div class="card dashboard-card timeslot-2 aqua">
+                                <div class="card dashboard-card slot-2 aqua">
 									<h5 class="card-title">Lógica para computação</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
                                 </div>
                             </div>
 
                             <div class="col-md-4 col-lg-3 pt-2 pb-3">
-                                <div class="card dashboard-card timeslot-2 blue">
+                                <div class="card dashboard-card slot-2 blue">
 									<h5 class="card-title">Computação, Sociedade e Ética</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
                                 </div>
                             </div>
 
                             <div class="col-md-4 col-lg-3 pt-2 pb-3">
-                                <div class="card dashboard-card timeslot-2 darkblue">
+                                <div class="card dashboard-card slot-2 darkblue">
 									<h5 class="card-title">Matemática Discreta</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
                                 </div>
                             </div>                           
                         </div>
@@ -86,8 +100,9 @@
                     <div class="carousel-item">
 						<div class="row" style="margin-left: 40px; margin-right:40px;">
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 darkblue">
+								<div class="card dashboard-card slot-2 darkblue">
 									<h5 class="card-title">Cálculo Diferencial e Integral</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 								</div>
 							</div>   
 						</div>
@@ -112,23 +127,27 @@
 			    	<div class="carousel-item active">
 						<div class="row" style="margin-left: 40px; margin-right:40px;">
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 green">
+								<div class="card dashboard-card slot-2 green">
 									<h5 class="card-title">Estrutura de Dados</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 								</div>
 							</div>
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 green">
+								<div class="card dashboard-card slot-2 green">
 									<h5 class="card-title">Banco de Dados</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 								</div>
 							</div>
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 aqua">
+								<div class="card dashboard-card slot-2 aqua">
 									<h5 class="card-title">Organização e Arquitetura de Computadores</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 								</div>
 							</div>
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 darkblue">           
+								<div class="card dashboard-card slot-2 darkblue">           
 									<h5 class="card-title">Geometria Analítica</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 								</div>
 							</div>                           
 			
@@ -146,31 +165,32 @@
 					<div class="carousel-item active">						
 						<div class="row" style="margin-left: 40px; margin-right:40px;">
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 aqua">
+								<div class="card dashboard-card slot-2 aqua">
 									<h5 class="card-title">Redes de Computadores</h5>                    
+									<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 								</div>
 							</div>
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 darkblue">
+								<div class="card dashboard-card slot-2 darkblue">
 						   
 										<h5 class="card-title">Teoria dos Grafos</h5>                    
-
+										<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 			
 								</div>
 							</div>
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 darkblue">
+								<div class="card dashboard-card slot-2 darkblue">
 						   
 										<h5 class="card-title">Álgebra Linear</h5>                    
-
+										<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 			
 								</div>
 							</div>
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 darkblue">
+								<div class="card dashboard-card slot-2 darkblue">
 						   
 										<h5 class="card-title">Probabilidade e Estatística</h5>                    
-
+										<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 			
 								</div>
 							</div>                           
@@ -189,37 +209,37 @@
 						<div class="row" style="margin-left: 40px; margin-right:40px;">
 			
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 darkblue">
+								<div class="card dashboard-card slot-2 darkblue">
 						   
 										<h5 class="card-title">Projeto e Análise de Algoritmos</h5>                    
-
+										<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 			
 								</div>
 							</div>
 			
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 aqua">
+								<div class="card dashboard-card slot-2 aqua">
 						   
 										<h5 class="card-title">Teoria da computação</h5>                    
-
+										<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 			
 								</div>
 							</div>
 			
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 green">
+								<div class="card dashboard-card slot-2 green">
 						   
 										<h5 class="card-title">Programação 3</h5>                    
-
+										<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 			
 								</div>
 							</div>
 			
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 green">
+								<div class="card dashboard-card slot-2 green">
 						   
 										<h5 class="card-title">Projeto de Software</h5>                    
-
+										<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 			
 								</div>
 							</div>                           
@@ -231,7 +251,7 @@
         </div>
         
 		<!--Ênfase Sistemas de Informação-->
-		<div class="periodos-containers container">
+		<div class="container">
             <h4 class="periodos_title">Ênfase Sistemas de Informação</h4>
 			<div id="carrossel" class="carousel slide" data-ride="carousel" data-interval="false">
 				<div class="carousel-inner">
@@ -239,19 +259,19 @@
 						<div class="row" style="margin-left: 40px; margin-right:40px;">
 			
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 blue">
+								<div class="card dashboard-card slot-2 blue">
 						   
 										<h5 class="card-title">Interação Homem-Máquina</h5>                    
-
+										<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 			
 								</div>
 							</div>
 			
 							<div class="col-md-4 col-lg-3 pt-2 pb-3">
-								<div class="card dashboard-card timeslot-2 green">
+								<div class="card dashboard-card slot-2 green">
 						   
 										<h5 class="card-title">Ciência de Dados</h5>                    
-
+										<a href="../weeklyClassTimetable/weeklyClassTimetable.html" class="stretched-link"></a>
 			
 								</div>
 							</div>                         

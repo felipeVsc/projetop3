@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--HeaderFooter Style Sheet-->
-    <link href="classDashboard_style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     
     <!--Google Fonts-->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&family=Roboto+Mono:wght@700&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--End of Google Fonts-->
 
     <!--Bootstrap dependencies-->
@@ -25,200 +26,243 @@
     <div class="header fixed-top d-flex p-4 px-md-5 mb-3 bg-light">
         <!--Meu@IC logo-->
         <div class="header-logo d-md-flex my-auto flex-grow-1">
-            <h2 class="mr-3 p-2">Meu@IC</h2>
+            <h2 class="mr-3 p-2" onclick="window.location = '../maindashboard/mainDashboard.html'">Meu@IC</h2>
         </div>  
         <!--End of Meu@IC logo--> 
 
-        <div class="d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
-            <!--Dropdown Ações Rápidas-->
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle btn-dark rounded-pill" type="button" id="header-actions-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Ações rápidas
-                </button>
-                <div class="dropdown-menu" aria-labelledby="header-actions-dropdown">
-                  <a class="dropdown-item" href="#">Agendar um atendimento</a>                  
-                  <a class="dropdown-item" href="#">Configurações de perfil</a>
-                </div>
-            </div>
-            <!--End of Dropdown Ações Rápidas-->
+        <div class="header-buttons d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
+            <!--Botoes Header-->
+			<button class="btn rounded-pill topbar_button blue" type="button" onclick="window.location = '../classDashboard/classDashboard.html'">
+				<div class="material-icons">
+                    add_task
+				</div>
+				&nbsp;Atividades
+			</button>
+
+			<button class="btn rounded-pill topbar_button dark" type="button" onclick="window.location = '../bookTimeSlot/bookTimeSlot.html'">
+				<div class="material-icons">
+                    event
+				</div>
+				&nbsp;Agendar
+			</button>
+            <!--End of Botoes Header-->
             
             <!--Profile picture icon-->
-            <img class="rounded-circle m-auto" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40"> 
+            <img class="rounded-circle m-auto" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40" onclick="window.location = '../profileManagement/profile.html'"> 
             <!--End of Profile picture icon-->            
         </div>          
     </div>
     <!--End of Header-->
     
-    <!--Aqui vai o corpo da página-->  
-    <div class="container page-container">        
-        <!--NAO REMOVER ESSE DIV-->
+    <!--Aqui vai o corpo da página-->
+    <div class="container page-container"> 
+        <div class="row align-items-center py-4">
+            <div class="col-2" style="width: min-content;">
+                <a href="../maindashboard/mainDashboard.html">
+                    <button type="button" class="btn btn-dark material-icons">
+                        arrow_back
+                    </button>
+                </a>
+            </div>
+            <div class="col-10 col-md-11">
+                <h4 class="m-0 mb-1 row discipline-name">
+                    Atividades 
+                </h4>
+            </div>
+        </div>
 
-        <div class="row">
-            <div class="col-9">
-                <div>
-                    <div>
-                        <h5>Disciplina</h5 style="">
-                        <h3>Programação Web</h3>
-                    </div>
-
-                    <div id="accordion">            
-                        <div class="card ">
-                          <div class="card-header styleAc" id="headingOne" >
-                            <h5 class="mb-0">
-                              <button class="btn btn-link fontesLink" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Listas de Exercícios
-                              </button>
-                            </h5>
-                          </div>
-                      
-                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-            
-                                <div class="card-group">
-            
-                                    <div class="card bg-light mb-3">
-                                      <div class="card-body">
-                                        <h5 class="card-title">Telas frontend</h5>
-                                        <p class="card-text">Entregar primeira versão das telas em html/css.</p>
-                                        <p class="card-text"><small class="text-muted">Alguma observação</small></p>
-                                      </div>
-                                    </div>
-            
-                                    <div class="card bg-light mb-3">
-                                      <div class="card-body">
-                                        <h5 class="card-title">Protótipos no Figma</h5>
-                                        <p class="card-text">Projetar as telas antes de codificar.</p>
-                                        <p class="card-text"><small class="text-muted">Observação qualquer</small></p>
-                                      </div>
-                                    </div>
-            
-                                    <div class="card bg-light mb-3">
-                                      <div class="card-body">
-                                        <h5 class="card-title">Algum exercício qualquer</h5>
-                                        <p class="card-text">Estou sem ideia para escrever texto, aqui tem a descrição de uma atividade.</p>
-                                        <p class="card-text"><small class="text-muted">Vale nota para AB1</small></p>
-                                      </div>
-                                    </div>
-            
-                                  </div>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="card">
-                          <div class="card-header styleAc" id="headingTwo">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed fontesLink" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Material complementar
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                
-                                <div class="card-group">
-            
-                                    <div class="card bg-light mb-3">
-                                      <div class="card-body">
-                                        <h5 class="card-title">PDF Tal coisa</h5>
-                                        <p class="card-text"><a href="#" class="stretched-link">Livro html para iniciantes.</a></p>
-                                        <p class="card-text"><small class="text-muted">Alguma observação</small></p>
-                                      </div>
-                                    </div>
-            
-                                    <div class="card bg-light mb-3">
-                                      <div class="card-body">
-                                        <h5 class="card-title">Vídeo no youtube</h5>
-                                        <p class="card-text"><a href="#" class="stretched-link">Video aqui.</a></p>
-                                        <p class="card-text"><small class="text-muted">Observação qualquer</small></p>
-                                      </div>
-                                    </div>
-                                  </div>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="card">
-                          <div class="card-header styleAc" id="headingThree">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed fontesLink" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Livros recomendados
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class = "card-group">
-                                    <div class="card bg-light mb-3" style="width: 18rem;">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Css para iniciantes</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">Escritor: Y</h6>
-                                          <p class="card-text">Descrição do livro ou comentário do professor.</p>
-                                        </div>
-                                      </div>
-                                      
-                                      <div class="card bg-light mb-3" style="width: 18rem;">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Html para iniciantes</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">Escritor: X</h6>
-                                          <p class="card-text">Descrição do livro ou comentário do professor.</p>
-                                        </div>
-                                      </div>
-            
-                                      <div class="card bg-light mb-3" style="width: 18rem;">
-                                        <div class="card-body">
-                                          <h5 class="card-title">Javascript para noobs</h5>
-                                          <h6 class="card-subtitle mb-2 text-muted">Escritor: Z</h6>
-                                          <p class="card-text">Descrição do livro ou comentário do professor.</p>
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                    
-                    </div>
-
+        <div class="row align-items-top">
+            <div class="col-12 col-md-5">
+                <div class="form-floating mb-4">
+                    <select class="form-select slot-1 dropdown dark" id="inputGroupDisciplina">
+                        <option value="1" selected>Programação 1</option>
+                        <option value="2">Estrutura de Dados</option>
+                        <option value="3">Projeto e Análise de Algoritmos</option>
+                    </select>
+                    <label for="inputGroupDisciplina" class="align-items-center labelInput" style="color: #eeeeee;">Disciplina</label>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="form-floating mb-4">
+                    <select class="form-select slot-1 dropdown dark" id="inputGroupMonitor">
+                        <option value="1" selected> Sônia </option>
+                        <option value="2"> Letícia </option>
+                        <option value="3"> Amélia </option>
+                    </select>    
+                    <label for="inputGroupMonitor" class="align-items-center labelInput" style="color: #eeeeee;">Monitor(a)</label>
                 </div>
             </div>
 
-            <div class="col-3">
-                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px">
-                    <button type="button" class="btn btn-success mb-3 rounded-pill" style="background-color: #12E58D; border: 0px;"><a href="../weeklyClassTimetable/weeklyClassTimetable.html" style="color: white;">Ver horários</a></button>
+            <div class="col-12 col-md-2">
+                <button class="btn main-button blue" type="button">
+                    <div class="icon-sm">
+                        event
+                    </div>
+                    Registrar Atividades
+                </button>
+            </div>
+
+            <div class="col-12">
+                <div class="group">
+                    <div class="groupslot-header slot-1" data-toggle="collapse" data-target="#G0M, #G0L, #G0">
+                        <div class="groupslot-header-card slot-card slot-card-1 dark">
+                            <h4 class="header-title">Semana N (00/00/0000 a 00/00/0000)</h4>
+                            <h4 id="G0M" class="icon-sm collapse">expand_more</h4>
+                            <h4 id="G0L" class="icon-sm collapse show">expand_less</h4>
+                        </div>
+                    </div>
+        
+                    <div id="G0" class="collapse show" aria-labelledby="headingOne">
+                        <div class="groupslot slot-1">
+                            <div class="col-4 col-md-2 slot-card dark unround-right">
+                                <h4 class="slot-text">Segunda</h4>
+                            </div>
+                            <div class="col-8 col-md-10 slot-card light-gray unround-left">
+                                <h4 class="slot-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed 
+                                    enim a lorem vehicula hendrerit ut vitae elit.
+                                </h4>
+                            </div>
+                        </div>
+        
+                        <div class="groupslot slot-2">
+                            <div class="col-4 col-md-2 slot-card dark unround-right">
+                                <h4 class="slot-text">Terça</h4>
+                            </div>
+                            <div class="col-8 col-md-10 slot-card light-gray unround-left">
+                                <h4 class="slot-text">
+                                    Cras a tristique ipsum, eget pharetra diam. Maecenas consectetur nec nibh
+                                    at sollicitudin. Maecenas erat tortor, dignissim ut nisl ac, iaculis 
+                                    condimentum eros. Proin condimentum lacus et purus aliquam eleifend.
+                                </h4>
+                            </div>
+                        </div>
+        
+                        <div class="groupslot slot-1">
+                            <div class="col-4 col-md-2 slot-card dark unround-right">
+                                <h4 class="slot-text">Quinta</h4>
+                            </div>
+                            <div class="col-8 col-md-10 slot-card light-gray unround-left">
+                                <h4 class="slot-text">
+                                    Donec semper, nulla eget semper facilisis, erat mauris sagittis dui, in
+                                    tempus augue eros quis nisl. Aliquam at ultricies urna.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="d-flex flex-column">
-                    <div style="display: flex; flex-direction: column; justify-content: space-between;">
-                        <div class="w-75 d-flex justify-content-around align-items-center">
-                            <img class="rounded-circle" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40">
-                            <div>
-                                <h5>Jade Picon</h5> 
-                                <h6>jadepicon@ic.ufal.br</h6>  
+                <div class="group">
+                    <div class="groupslot-header slot-1" data-toggle="collapse" data-target="#G1M, #G1L, #G1">
+                        <div class="groupslot-header-card slot-card slot-card-1 dark">
+                            <h4 class="header-title">Semana N (00/00/0000 a 00/00/0000)</h4>
+                            <h4 id="G1M" class="icon-sm collapse show">expand_more</h4>
+                            <h4 id="G1L" class="icon-sm collapse">expand_less</h4>
+                        </div>
+                    </div>
+        
+                    <div id="G1" class="collapse" aria-labelledby="headingOne">
+                        <div class="groupslot slot-1">
+                            <div class="col-4 col-md-2 slot-card dark unround-right">
+                                <h4 class="slot-text">Segunda</h4>
+                            </div>
+                            <div class="col-8 col-md-10 slot-card light-gray unround-left">
+                                <h4 class="slot-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed 
+                                    enim a lorem vehicula hendrerit ut vitae elit.
+                                </h4>
                             </div>
                         </div>
-                              
-                        <div class="w-75 d-flex justify-content-around align-items-center">
-                            <img class="rounded-circle" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40">
-                            <div>
-                                <h5>Jade Picon</h5> 
-                                <h6>jadepicon@ic.ufal.br</h6>  
+        
+                        <div class="groupslot slot-2">
+                            <div class="col-4 col-md-2 slot-card dark unround-right">
+                                <h4 class="slot-text">Terça</h4>
+                            </div>
+                            <div class="col-8 col-md-10 slot-card light-gray unround-left">
+                                <h4 class="slot-text">
+                                    Cras a tristique ipsum, eget pharetra diam. Maecenas consectetur nec nibh
+                                    at sollicitudin. Maecenas erat tortor, dignissim ut nisl ac, iaculis 
+                                    condimentum eros. Proin condimentum lacus et purus aliquam eleifend.
+                                </h4>
                             </div>
                         </div>
-                    </div>         
-                </div>          
+        
+                        <div class="groupslot slot-1">
+                            <div class="col-4 col-md-2 slot-card dark unround-right">
+                                <h4 class="slot-text">Quinta</h4>
+                            </div>
+                            <div class="col-8 col-md-10 slot-card light-gray unround-left">
+                                <h4 class="slot-text">
+                                    Donec semper, nulla eget semper facilisis, erat mauris sagittis dui, in
+                                    tempus augue eros quis nisl. Aliquam at ultricies urna.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="groupslot-header slot-1" data-toggle="collapse" data-target="#G2M, #G2L, #G2">
+                        <div class="groupslot-header-card slot-card slot-card-1 dark">
+                            <h4 class="header-title">Semana N (00/00/0000 a 00/00/0000)</h4>
+                            <h4 id="G2M" class="icon-sm collapse show">expand_more</h4>
+                            <h4 id="G2L" class="icon-sm collapse">expand_less</h4>
+                        </div>
+                    </div>
+        
+                    <div id="G2" class="collapse" aria-labelledby="headingOne">
+                        <div class="groupslot slot-1">
+                            <div class="col-4 col-md-2 slot-card dark unround-right">
+                                <h4 class="slot-text">Segunda</h4>
+                            </div>
+                            <div class="col-8 col-md-10 slot-card light-gray unround-left">
+                                <h4 class="slot-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed 
+                                    enim a lorem vehicula hendrerit ut vitae elit.
+                                </h4>
+                            </div>
+                        </div>
+        
+                        <div class="groupslot slot-2">
+                            <div class="col-4 col-md-2 slot-card dark unround-right">
+                                <h4 class="slot-text">Terça</h4>
+                            </div>
+                            <div class="col-8 col-md-10 slot-card light-gray unround-left">
+                                <h4 class="slot-text">
+                                    Cras a tristique ipsum, eget pharetra diam. Maecenas consectetur nec nibh
+                                    at sollicitudin. Maecenas erat tortor, dignissim ut nisl ac, iaculis 
+                                    condimentum eros. Proin condimentum lacus et purus aliquam eleifend.
+                                </h4>
+                            </div>
+                        </div>
+        
+                        <div class="groupslot slot-1">
+                            <div class="col-4 col-md-2 slot-card dark unround-right">
+                                <h4 class="slot-text">Quinta</h4>
+                            </div>
+                            <div class="col-8 col-md-10 slot-card light-gray unround-left">
+                                <h4 class="slot-text">
+                                    Donec semper, nulla eget semper facilisis, erat mauris sagittis dui, in
+                                    tempus augue eros quis nisl. Aliquam at ultricies urna.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+    
+
+    
         </div>
     </div>
     <!--Fim do corpo da página-->
 
-    
     <!--Footer-->
-    <div class="footer">
-        <footer class="footer mt-auto py-4 bg-light">
-            <p>©2022 Meu@IC. Todos os direitos reservados.</p>
-            </div>    
-        </footer>
-    </div>
+    <footer class="footer mt-4 py-3 bg-light">
+        <p>©2022 Meu@IC. Todos os direitos reservados.</p>
+        </div>    
+    </footer>
     <!--End of Footer-->
 
     <!--Bootstrap dependencies-->

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--HeaderFooter Style Sheet-->
-    <link href="weeklyClassTimetable_style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,31 +22,24 @@
     <title>Meu@IC</title>
 </head>
 <body>
-     <!--Header-->
-     <div class="header fixed-top d-flex p-4 px-md-5 mb-3 bg-light">
+    <!--Header-->
+    <div class="header fixed-top d-flex p-4 px-md-5 mb-3 bg-light">
         <!--Meu@IC logo-->
         <div class="header-logo d-md-flex my-auto flex-grow-1">
-            <h2 class="mr-3 p-2">Meu@IC</h2>
+            <h2 class="mr-3 p-2" onclick="window.location = '../maindashboard/mainDashboard.html'">Meu@IC</h2>
         </div>  
         <!--End of Meu@IC logo--> 
 
         <div class="header-buttons d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
             <!--Botoes Header-->
-			<button class="btn rounded-pill topbar_button darkblue" type="button">
+			<button class="btn rounded-pill topbar_button blue" type="button" onclick="window.location = '../classDashboard/classDashboard.html'">
 				<div class="material-icons">
-                    event
-				</div>
-				&nbsp;Disciplinas
-			</button>
-
-			<button class="btn rounded-pill topbar_button blue" type="button">
-				<div class="material-icons">
-                    event
+                    add_task
 				</div>
 				&nbsp;Atividades
 			</button>
 
-			<button class="btn rounded-pill topbar_button dark" type="button">
+			<button class="btn rounded-pill topbar_button dark" type="button" onclick="window.location = '../bookTimeSlot/bookTimeSlot.html'">
 				<div class="material-icons">
                     event
 				</div>
@@ -55,7 +48,7 @@
             <!--End of Botoes Header-->
             
             <!--Profile picture icon-->
-            <img class="rounded-circle m-auto" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40"> 
+            <img class="rounded-circle m-auto" src="https://static1.purepeople.com.br/articles/0/32/59/50/@/3678243-jade-picon-volta-a-comentar-polemica-com-624x600-2.jpg" width="40" height="40" onclick="window.location = '../profileManagement/profile.html'"> 
             <!--End of Profile picture icon-->            
         </div>          
     </div>
@@ -64,178 +57,174 @@
     
     <!--Aqui vai o corpo da página-->
     <div class="container page-container"> 
-        <div class="px-sm-5 px-4">
-            <div class="row align-items-center py-4">
-                <div class="col-2" style="width: min-content;">
-                    <a href="../maindashboard/mainDashboard.html">
-                        <button type="button" class="btn btn-dark material-icons">
-                            arrow_back
-                        </button>
-                    </a>
-                </div>
-                <div class="col-10 col-md-11">
-                    <h5 class="m-0 mt-1 row discipline-title">
-                        Disponibilidade de Atendimento
-                    </h5>
-                    <h4 class="m-0 mb-1 row discipline-name">
-                        Projeto e Análise de Algoritmos
-                    </h4>
-                </div>
+        <div class="row align-items-center py-4">
+            <div class="col-2" style="width: min-content;">
+                <a href="../maindashboard/mainDashboard.html">
+                    <button type="button" class="btn btn-dark material-icons">
+                        arrow_back
+                    </button>
+                </a>
             </div>
-            <div class="my-3 my-sm-5 row align-items-center">
-                <div class="col-12 col-sm-2">
-                    <div class="row timeslot timeslot-1">
-                        <div class="timeslot-card timeslot-card-1">
-                            <h4 class="material-icons">schedule</h4>
+            <div class="col-10 col-md-11">
+                <h4 class="m-0 mb-1 row discipline-name">
+                    Projeto e Análise de Algoritmos
+                </h4>
+            </div>
+        </div>
+
+        <div class="my-3 my-sm-5 row align-items-center">
+            <div class="col-12 col-sm-2">
+                <div class="row timeslot slot-1">
+                    <div class="slot-card slot-card-1">
+                        <h4 class="material-icons">schedule</h4>
+                    </div>
+                </div>
+    
+                <h5 class="row timeslot slot-1 timeslot-horary">
+                    07:30 - 09:10
+                </h5>
+                <h5 class="row timeslot slot-1 timeslot-horary">
+                    09:20 - 11:00
+                </h5>
+                <h5 class="row timeslot slot-1 timeslot-horary">
+                    11:10 - 12:50
+                </h5>
+                <h5 class="row timeslot slot-1 timeslot-horary">
+                    13:30 - 15:10
+                </h5>
+                <h5 class="row timeslot slot-1 timeslot-horary">
+                    15:20 - 17:00
+                </h5>
+                <h5 class="row timeslot slot-1 timeslot-horary">
+                    17:10 - 18:50
+                </h5>
+            </div>
+    
+            <div class="col-12 col-sm-10">
+                <div class="row">
+                    <!--SEGUNDA-->
+                    <div class="col-12 col-sm">
+                        <div class="row timeslot slot-1">
+                            <div class="slot-card slot-card-1 dark">
+                                <h4 class="timeslot-title">Segunda</h4>
+                            </div>
+                        </div>
+    
+                        <div class="row timeslot slot-3">
+                            <div class="slot-card slot-card-1 aqua"> 
+                            </div>
+                        </div>
+                        <div class="row timeslot slot-1">
+                        </div>
+                        <div class="row timeslot slot-2">
+                            <div class="slot-card slot-card-1 aqua"></div>
                         </div>
                     </div>
-        
-                    <h5 class="row timeslot timeslot-1 timeslot-horary">
-                        07:30 - 09:10
-                    </h5>
-                    <h5 class="row timeslot timeslot-1 timeslot-horary">
-                        09:20 - 11:00
-                    </h5>
-                    <h5 class="row timeslot timeslot-1 timeslot-horary">
-                        11:10 - 12:50
-                    </h5>
-                    <h5 class="row timeslot timeslot-1 timeslot-horary">
-                        13:30 - 15:10
-                    </h5>
-                    <h5 class="row timeslot timeslot-1 timeslot-horary">
-                        15:20 - 17:00
-                    </h5>
-                    <h5 class="row timeslot timeslot-1 timeslot-horary">
-                        17:10 - 18:50
-                    </h5>
-                </div>
-        
-                <div class="col-12 col-sm-10">
-                    <div class="row">
-                        <!--SEGUNDA-->
-                        <div class="col-12 col-sm">
-                            <div class="row timeslot timeslot-1">
-                                <div class="timeslot-card timeslot-card-1 dark">
-                                    <h4 class="timeslot-title">Segunda</h4>
-                                </div>
-                            </div>
-        
-                            <div class="row timeslot timeslot-3">
-                                <div class="timeslot-card timeslot-card-1 aqua"> 
-                                </div>
-                            </div>
-                            <div class="row timeslot timeslot-1">
-                            </div>
-                            <div class="row timeslot timeslot-2">
-                                <div class="timeslot-card timeslot-card-1 aqua"></div>
+    
+                    <!--TERÇA-->
+                    <div class="col-12 col-sm">
+                        <div class="row timeslot slot-1">
+                            <div class="slot-card slot-card-1 dark">
+                                <h4 class="timeslot-title">Terça</h4>
                             </div>
                         </div>
-        
-                        <!--TERÇA-->
-                        <div class="col-12 col-sm">
-                            <div class="row timeslot timeslot-1">
-                                <div class="timeslot-card timeslot-card-1 dark">
-                                    <h4 class="timeslot-title">Terça</h4>
-                                </div>
+    
+                        <div class="row timeslot slot-1"></div>
+                        <div class="row timeslot slot-1"></div>
+                        <div class="row timeslot slot-2">
+                            <div class="slot-card slot-card-2 aqua card-rightspace">
+    
                             </div>
-        
-                            <div class="row timeslot timeslot-1"></div>
-                            <div class="row timeslot timeslot-1"></div>
-                            <div class="row timeslot timeslot-2">
-                                <div class="timeslot-card timeslot-card-2 aqua card-rightspace">
-        
-                                </div>
-                                <div class="timeslot-card timeslot-card-2 blue">
-        
-                                </div>
-                            </div>
-                            <div class="row timeslot timeslot-1">
-                                <div class="timeslot-card timeslot-card-1 blue">
-        
-                                </div>
-                            </div>
-                            <div class="row timeslot timeslot-1"></div>
-                        </div>
-        
-                        <!--QUARTA-->
-                        <div class="col-12 col-sm">
-                            <div class="row timeslot timeslot-1">
-                                <div class="timeslot-card timeslot-card-1 dark">
-                                    <h4 class="timeslot-title">Quarta</h4>
-                                </div>
-                            </div>
-        
-                            <div class="row timeslot timeslot-2">
-                                <div class="timeslot-card timeslot-card-1 aqua">
-        
-                                </div>
-                            </div>
-                            <div class="row timeslot timeslot-1"></div>
-                            <div class="row timeslot timeslot-1"></div>
-                            <div class="row timeslot timeslot-2">
-                                <div class="timeslot-card timeslot-card-1 blue">
-        
-                                </div>
+                            <div class="slot-card slot-card-2 blue">
+    
                             </div>
                         </div>
-        
-                        <!--QUINTA-->
-                        <div class="col-12 col-sm">
-                            <div class="row timeslot timeslot-1">
-                                <div class="timeslot-card timeslot-card-1 dark">
-                                    <h4 class="timeslot-title">Quinta</h4>
-                                </div>
-                            </div>
-        
-                            <div class="row timeslot timeslot-1"></div>
-                            <div class="row timeslot timeslot-2">
-                                <div class="timeslot-card timeslot-card-1 aqua">
-        
-                                </div>
-                            </div>
-                            <div class="row timeslot timeslot-3">
-                                <div class="timeslot-card timeslot-card-1 blue">
-        
-                                </div>
+                        <div class="row timeslot slot-1">
+                            <div class="slot-card slot-card-1 blue">
+    
                             </div>
                         </div>
-        
-                        <!--SEXTA-->
-                        <div class="col-12 col-sm">
-                            <div class="row timeslot timeslot-1">
-                                <div class="timeslot-card timeslot-card-1 dark">
-                                    <h4 class="timeslot-title">Sexta</h4>
-                                </div>
+                        <div class="row timeslot slot-1"></div>
+                    </div>
+    
+                    <!--QUARTA-->
+                    <div class="col-12 col-sm">
+                        <div class="row timeslot slot-1">
+                            <div class="slot-card slot-card-1 dark">
+                                <h4 class="timeslot-title">Quarta</h4>
                             </div>
-        
-                            <div class="row timeslot timeslot-2">
-                                <div class="timeslot-card timeslot-card-2 aqua card-rightspace">
-        
-                                </div>
-                                <div class="timeslot-card timeslot-card-2 blue">
-        
-                                </div>
+                        </div>
+    
+                        <div class="row timeslot slot-2">
+                            <div class="slot-card slot-card-1 aqua">
+    
                             </div>
-                            <div class="row timeslot timeslot-1">
-                                <div class="timeslot-card timeslot-card-2 aqua card-rightspace">
-        
-                                </div>
-                                <div class="timeslot-card timeslot-card-2 blue">
-        
-                                </div>
-                            </div>
-                            <div class="row timeslot timeslot-3">
-                                <div class="timeslot-card timeslot-card-1 aqua">
-        
-                                </div>
+                        </div>
+                        <div class="row timeslot slot-1"></div>
+                        <div class="row timeslot slot-1"></div>
+                        <div class="row timeslot slot-2">
+                            <div class="slot-card slot-card-1 blue">
+    
                             </div>
                         </div>
                     </div>
-        
+    
+                    <!--QUINTA-->
+                    <div class="col-12 col-sm">
+                        <div class="row timeslot slot-1">
+                            <div class="slot-card slot-card-1 dark">
+                                <h4 class="timeslot-title">Quinta</h4>
+                            </div>
+                        </div>
+    
+                        <div class="row timeslot slot-1"></div>
+                        <div class="row timeslot slot-2">
+                            <div class="slot-card slot-card-1 aqua">
+    
+                            </div>
+                        </div>
+                        <div class="row timeslot slot-3">
+                            <div class="slot-card slot-card-1 blue">
+    
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--SEXTA-->
+                    <div class="col-12 col-sm">
+                        <div class="row timeslot slot-1">
+                            <div class="slot-card slot-card-1 dark">
+                                <h4 class="timeslot-title">Sexta</h4>
+                            </div>
+                        </div>
+    
+                        <div class="row timeslot slot-2">
+                            <div class="slot-card slot-card-2 aqua card-rightspace">
+    
+                            </div>
+                            <div class="slot-card slot-card-2 blue">
+    
+                            </div>
+                        </div>
+                        <div class="row timeslot slot-1">
+                            <div class="slot-card slot-card-2 aqua card-rightspace">
+    
+                            </div>
+                            <div class="slot-card slot-card-2 blue">
+    
+                            </div>
+                        </div>
+                        <div class="row timeslot slot-3">
+                            <div class="slot-card slot-card-1 aqua">
+    
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        
-        
+    
             </div>
+    
+    
         </div>
     </div>
     <!--Fim do corpo da página-->
