@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php 
+$role = "monitor" //papel do usuario no sistema
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -33,7 +36,32 @@
 
             <div class="header-buttons d-grid gap-2 d-flex flex-row justify-content-end align-items-center">
                 <!--Botoes Header-->
+                <!--Se o usuario for monitor-->
+                <?php if($role == "monitor"): ?>
+                    <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Monitor
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Historico</a>
+                        <a class="dropdown-item" href="#">Administrar disciplina</a>
+                    </div>
+                    </div>
+                <?php endif; ?>
 
+                <!--Se o usuario for professor-->
+                <?php if($role == "teacher"): ?>
+                    <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Professor
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Gerenciar disciplinas</a>
+                        <a class="dropdown-item" href="#">Gerenciar monitores</a>
+                    </div>
+                    </div>
+                <?php endif; ?>
+                
                 <button class="btn rounded-pill topbar_button white" type="button">
 					<div class="px-1">
 						<img class="rounded-circle m-auto" src="https://logopng.com.br/logos/google-37.png" width="20" height="20"> 
