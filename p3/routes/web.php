@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Profile;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('basic_component');
 });
 
-
-Route::get('/login', function () {
-    return view('login');
+Route::get('/home', function () {
+    return view('main_dashboard');
 });
 
-Route::get('/cadastro', function () {
-    return view('cadastro');
-});
+Route::get('/profile', [Profile::class, 'completeProfile']);
 
-
+Route::post('/profileComplete', [Profile::class, 'saveProfile']);
