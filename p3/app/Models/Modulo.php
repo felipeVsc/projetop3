@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Modulo extends Model
 {
     use HasFactory;
     // Definindo a PK
-    protected $primaryKey = 'ID';
+    protected $primaryKey = 'modulo';
 
     /*
     As proximas duas linhas sao para evitar que ele tente incrementar
@@ -26,10 +26,7 @@ class User extends Model
 
     // Evitar que o usuario acesse diretamente o userRole
     protected $fillable = [
-        'ID',
-        'email',
-        'matricula',
-        'name',
-        'picture',
+        'modulo',
+        'idDisciplina'
     ];
 }

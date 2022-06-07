@@ -1,10 +1,11 @@
 <?php
 
+use App\Models\Disciplina;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateModulosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +14,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('password_resets', function (Blueprint $table) {
-            $table->string('email')->index();
-            $table->string('token');
-            $table->timestamp('created_at')->nullable();
+        Schema::create('modulos', function (Blueprint $table) {
+            $table->string("modulo")->primary();
+            $table->foreignIdFor(Disciplina::class,'idDisciplina');
         });
     }
 
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('password_resets');
+        Schema::dropIfExists('modulos');
     }
-};
+}
