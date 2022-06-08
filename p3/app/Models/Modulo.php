@@ -9,7 +9,7 @@ class Modulo extends Model
 {
     use HasFactory;
     // Definindo a PK
-    protected $primaryKey = 'modulo';
+    protected $primaryKey = 'idModulo';
 
     /*
     As proximas duas linhas sao para evitar que ele tente incrementar
@@ -19,8 +19,7 @@ class Modulo extends Model
 
     Timestamps desligados
     */
-    public $incrementing = false;
-    protected $keyType = 'string';
+       
     public $timestamps = false;
     
 

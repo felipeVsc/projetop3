@@ -14,7 +14,8 @@ class CreateDisciplinasTable extends Migration
     public function up()
     {
         Schema::create('disciplinas', function (Blueprint $table) {
-            $table->string("idDisciplina")->primary();
+            $table->id("idModulo")->primary();
+            $table->string("idDisciplina");
             $table->string("nameDisciplina");
         });
     }
