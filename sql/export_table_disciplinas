@@ -1,77 +1,77 @@
-COMP359        ,PROGRAMAÇÃO 1                                                                                                                                                                                                                                                  
-COMP360        ,LÓGICA PARA COMPUTAÇÃO                                                                                                                                                                                                                                         
-COMP361        ,COMPUTAÇÃO, SOCIEDADE E ÉTICA
-COMP362        ,MATEMÁTICA DISCRETA                                                                                                                                                                                                                                            
-COMP363        ,CÁLCULO DIFERENCIAL E INTEGRAL                                                                                                                                                                                                                                 
-COMP364        ,ESTRUTURA DE DADOS                                                                                                                                                                                                                                             
-COMP365        ,BANCO DE DADOS                                                                                                                                                                                                                                                 
-COMP366        ,ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES                                                                                                                                                                                                                      
-COMP367        ,GEOMETRIA ANALÍTICA                                                                                                                                                                                                                                            
-COMP368        ,REDES DE COMPUTADORES                                                                                                                                                                                                                                          
-COMP369        ,TEORIA DOS GRAFOS                                                                                                                                                                                                                                              
-COMP370        ,PROBABILIDADE E ESTATÍSTICA                                                                                                                                                                                                                                    
-COMP371        ,ÁLGEBRA LINEAR                                                                                                                                                                                                                                                 
-COMP372        ,PROGRAMAÇÃO 2                                                                                                                                                                                                                                                  
-COMP373        ,PROGRAMAÇÃO 3                                                                                                                                                                                                                                                  
-COMP374        ,PROJETO E ANÁLISE DE ALGORITMOS                                                                                                                                                                                                                                
-COMP376        ,TEORIA DA COMPUTAÇÃO                                                                                                                                                                                                                                           
-COMP378        ,SISTEMAS OPERACIONAIS                                                                                                                                                                                                                                          
-COMP379        ,COMPILADORES                                                                                                                                                                                                                                                   
-COMP380        ,INTELIGÊNCIA ARTIFICIAL                                                                                                                                                                                                                                        
-COMP381        ,COMPUTAÇÃO GRÁFICA                                                                                                                                                                                                                                             
-COMP382        ,PROJETO E DESENVOLVIMENTO DE SISTEMAS                                                                                                                                                                                                                          
-COMP386        ,METODOLOGIA DE PESQUISA E TRABALHO INDIVIDUAL                                                                                                                                                                                                                  
-COMP387        ,NOÇÕES DE DIREITO                                                                                                                                                                                                                                              
-COMP404        ,CÁLCULO 3                                                                                                                                                                                                                                                      
-COMP389        ,CONCEITOS DE LINGUAGEM DE PROGRAMAÇÃO                                                                                                                                                                                                                          
-COMP390        ,APRENDIZAGEM DE MÁQUINA                                                                                                                                                                                                                                        
-COMP391        ,SISTEMAS DIGITAIS                                                                                                                                                                                                                                              
-COMP392        ,SISTEMAS DISTRIBUÍDOS                                                                                                                                                                                                                                          
-COMP393        ,REDES NEURAIS E APRENDIZADO PROFUNDO                                                                                                                                                                                                                           
-COMP394        ,FPGA                                                                                                                                                                                                                                                           
-COMP395        ,INTERAÇÃO HOMEM-MÁQUINA                                                                                                                                                                                                                                        
-COMP396        ,PROCESSAMENTO DIGITAL DE IMAGENS                                                                                                                                                                                                                               
-COMP397        ,COMPUTAÇÃO EVOLUCIONÁRIA                                                                                                                                                                                                                                       
-COMP398        ,SISTEMAS EMBARCADOS                                                                                                                                                                                                                                            
-COMP399        ,GERÊNCIA DE PROJETO                                                                                                                                                                                                                                            
-COMP400        ,VISÃO COMPUTACIONAL                                                                                                                                                                                                                                            
-COMP401        ,CIÊNCIA DE DADOS                                                                                                                                                                                                                                               
-COMP402        ,MICROCONTROLADORE S E APLICAÇÕES                                                                                                                                                                                                                               
-COMP403        ,SEGURANÇA DE SISTEMAS COMPUTACIONAIS                                                                                                                                                                                                                           
-CC1941         ,CÁLCULO 4                                                                                                                                                                                                                                                      
-CC1942         ,CÁLCULO NUMÉRICO                                                                                                                                                                                                                                               
-CC1943         ,CIRCUITOS DIGITAIS                                                                                                                                                                                                                                             
-CC1944         ,CIRCUITOS IMPRESSOS                                                                                                                                                                                                                                            
-CC1945         ,FUNDAMENTOS DE LIBRAS                                                                                                                                                                                                                                          
-CC1946         ,GEOMETRIA COMPUTACIONAL                                                                                                                                                                                                                                        
-CC1947         ,PESQUISA OPERACIONAL                                                                                                                                                                                                                                           
-CC1948         ,PROGRAMAÇÃO PARA SISTEMAS EMBARCADOS                                                                                                                                                                                                                           
-CC1949         ,PROJETO DE SISTEMAS EMBARCADOS                                                                                                                                                                                                                                 
-CC1950         ,TÓPICOS EM ARQUITETURA DE COMPUTADORES                                                                                                                                                                                                                         
-CC1951         ,TÓPICOS EM BANCO DE DADOS                                                                                                                                                                                                                                      
-CC1952         ,TÓPICOS EM COMPUTAÇÃO CIENTÍFICA                                                                                                                                                                                                                               
-CC1953         ,TÓPICOS EM COMPUTAÇÃO PARALELA                                                                                                                                                                                                                                 
-CC1954         ,TÓPICOS EM COMPUTAÇÃO VISUAL                                                                                                                                                                                                                                   
-CC1955         ,TÓPICOS EM COMUNICAÇÃO DE DADOS                                                                                                                                                                                                                                
-CC1956         ,TÓPICOS EM DESENVOLVIMENTO DE SISTEMAS                                                                                                                                                                                                                         
-CC1957         ,TÓPICOS EM ENGENHARIA DE SOFTWARE                                                                                                                                                                                                                              
-CC1958         ,TÓPICOS EM HUMANIDADES                                                                                                                                                                                                                                         
-CC1959         ,TÓPICOS EM INFORMÁTICA NA EDUCAÇÃO                                                                                                                                                                                                                             
-CC1960         ,TÓPICOS EM INTELIGÊNCIA ARTIFICIAL                                                                                                                                                                                                                             
-CC1961         ,TÓPICOS EM LINGUAGENS DE PROGRAMAÇÃO                                                                                                                                                                                                                           
-CC1962         ,TÓPICOS EM PROGRAMAÇÃO                                                                                                                                                                                                                                         
-CC1963         ,TÓPICOS EM REDES DE COMPUTADORES                                                                                                                                                                                                                               
-CC1964         ,TÓPICOS EM SISTEMAS DE COMPUTAÇÃO                                                                                                                                                                                                                              
-CC1965         ,TÓPICOS EM SISTEMAS DE INFORMAÇÃO                                                                                                                                                                                                                              
-CC1966         ,TÓPICOS EM SISTEMAS DISTRIBUÍDOS                                                                                                                                                                                                                               
-CC1967         ,TÓPICOS EM SISTEMAS INTELIGENTES                                                                                                                                                                                                                               
-CC1968         ,TÓPICOS EM SOFTWARE BÁSICO                                                                                                                                                                                                                                     
-COMP405        ,TÓPICOS EM CIÊNCIA DA COMPUTAÇÃO 1                                                                                                                                                                                                                             
-COMP406        ,TÓPICOS EM CIÊNCIA DA COMPUTAÇÃO 2                                                                                                                                                                                                                             
-COMP407        ,TÓPICOS EM CIÊNCIA DA COMPUTAÇÃO 3                                                                                                                                                                                                                             
-COMP409        ,TÓPICOS EM MATEMÁTICA PARA COMPUTAÇÃO 1                                                                                                                                                                                                                        
-COMP410        ,TÓPICOS EM MATEMÁTICA PARA COMPUTAÇÃO 2                                                                                                                                                                                                                        
-COMP411        ,TÓPICOS EM MATEMÁTICA PARA COMPUTAÇÃO 3                                                                                                                                                                                                                        
-COMP412        ,TÓPICOS EM FÍSICA PARA COMPUTAÇÃO 1                                                                                                                                                                                                                            
-COMP413        ,TÓPICOS EM FÍSICA PARA COMPUTAÇÃO 2                                                                                                                                                                                                                            
-COMP414        ,TÓPICOS EM FÍSICA PARA COMPUTAÇÃO 3                                                                                                                                                                                                                            
+COMP359,PROGRAMAÇÃO 1
+COMP360,LÓGICA PARA COMPUTAÇÃO
+COMP361,COMPUTAÇÃO, SOCIEDADE E ÉTICA
+COMP362,MATEMÁTICA DISCRETA
+COMP363,CÁLCULO DIFERENCIAL E INTEGRAL
+COMP364,ESTRUTURA DE DADOS
+COMP365,BANCO DE DADOS
+COMP366,ORGANIZAÇÃO E ARQUITETURA DE COMPUTADORES
+COMP367,GEOMETRIA ANALÍTICA
+COMP368,REDES DE COMPUTADORES
+COMP369,TEORIA DOS GRAFOS
+COMP370,PROBABILIDADE E ESTATÍSTICA
+COMP371,ÁLGEBRA LINEAR
+COMP372,PROGRAMAÇÃO 2
+COMP373,PROGRAMAÇÃO 3
+COMP374,PROJETO E ANÁLISE DE ALGORITMOS
+COMP376,TEORIA DA COMPUTAÇÃO
+COMP378,SISTEMAS OPERACIONAIS
+COMP379,COMPILADORES
+COMP380,INTELIGÊNCIA ARTIFICIAL
+COMP381,COMPUTAÇÃO GRÁFICA
+COMP382,PROJETO E DESENVOLVIMENTO DE SISTEMAS
+COMP386,METODOLOGIA DE PESQUISA E TRABALHO INDIVIDUAL
+COMP387,NOÇÕES DE DIREITO
+COMP404,CÁLCULO 3
+COMP389,CONCEITOS DE LINGUAGEM DE PROGRAMAÇÃO
+COMP390,APRENDIZAGEM DE MÁQUINA
+COMP391,SISTEMAS DIGITAIS
+COMP392,SISTEMAS DISTRIBUÍDOS
+COMP393,REDES NEURAIS E APRENDIZADO PROFUNDO
+COMP394,FPGA
+COMP395,INTERAÇÃO HOMEM-MÁQUINA
+COMP396,PROCESSAMENTO DIGITAL DE IMAGENS
+COMP397,COMPUTAÇÃO EVOLUCIONÁRIA
+COMP398,SISTEMAS EMBARCADOS
+COMP399,GERÊNCIA DE PROJETO
+COMP400,VISÃO COMPUTACIONAL
+COMP401,CIÊNCIA DE DADOS
+COMP402,MICROCONTROLADORE S E APLICAÇÕES
+COMP403,SEGURANÇA DE SISTEMAS COMPUTACIONAIS
+CC1941,CÁLCULO 4
+CC1942,CÁLCULO NUMÉRICO
+CC1943,CIRCUITOS DIGITAIS
+CC1944,CIRCUITOS IMPRESSOS
+CC1945,FUNDAMENTOS DE LIBRAS
+CC1946,GEOMETRIA COMPUTACIONAL
+CC1947,PESQUISA OPERACIONAL
+CC1948,PROGRAMAÇÃO PARA SISTEMAS EMBARCADOS
+CC1949,PROJETO DE SISTEMAS EMBARCADOS
+CC1950,TÓPICOS EM ARQUITETURA DE COMPUTADORES
+CC1951,TÓPICOS EM BANCO DE DADOS
+CC1952,TÓPICOS EM COMPUTAÇÃO CIENTÍFICA
+CC1953,TÓPICOS EM COMPUTAÇÃO PARALELA
+CC1954,TÓPICOS EM COMPUTAÇÃO VISUAL
+CC1955,TÓPICOS EM COMUNICAÇÃO DE DADOS
+CC1956,TÓPICOS EM DESENVOLVIMENTO DE SISTEMAS
+CC1957,TÓPICOS EM ENGENHARIA DE SOFTWARE
+CC1958,TÓPICOS EM HUMANIDADES
+CC1959,TÓPICOS EM INFORMÁTICA NA EDUCAÇÃO
+CC1960,TÓPICOS EM INTELIGÊNCIA ARTIFICIAL
+CC1961,TÓPICOS EM LINGUAGENS DE PROGRAMAÇÃO
+CC1962,TÓPICOS EM PROGRAMAÇÃO
+CC1963,TÓPICOS EM REDES DE COMPUTADORES
+CC1964,TÓPICOS EM SISTEMAS DE COMPUTAÇÃO
+CC1965,TÓPICOS EM SISTEMAS DE INFORMAÇÃO
+CC1966,TÓPICOS EM SISTEMAS DISTRIBUÍDOS
+CC1967,TÓPICOS EM SISTEMAS INTELIGENTES
+CC1968,TÓPICOS EM SOFTWARE BÁSICO
+COMP405,TÓPICOS EM CIÊNCIA DA COMPUTAÇÃO 1
+COMP406,TÓPICOS EM CIÊNCIA DA COMPUTAÇÃO 2
+COMP407,TÓPICOS EM CIÊNCIA DA COMPUTAÇÃO 3
+COMP409,TÓPICOS EM MATEMÁTICA PARA COMPUTAÇÃO 1
+COMP410,TÓPICOS EM MATEMÁTICA PARA COMPUTAÇÃO 2
+COMP411,TÓPICOS EM MATEMÁTICA PARA COMPUTAÇÃO 3
+COMP412,TÓPICOS EM FÍSICA PARA COMPUTAÇÃO 1
+COMP413,TÓPICOS EM FÍSICA PARA COMPUTAÇÃO 2
+COMP414,TÓPICOS EM FÍSICA PARA COMPUTAÇÃO 3
