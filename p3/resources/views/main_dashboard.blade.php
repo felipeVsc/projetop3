@@ -16,6 +16,8 @@
 
     @php
         $current_module = $disciplinas[0]->modulo;
+        $colors = ["green", "aqua", "blue", "darkblue"];
+        $random = rand(0,3);
     @endphp
     
     <div class="periodos-containers container">
@@ -24,7 +26,7 @@
                 @foreach ($disciplinas as $disciplina)
                     @if($disciplina->modulo == $current_module)
                     <div class="col-md-4 col-lg-3 pt-2 pb-3" id={{$disciplina->id_disciplina}}>
-                        <div class="card dashboard-card slot-2 green">
+                        <div class="card dashboard-card slot-2 <?php echo $colors[rand(0,3)]?> ">
                             <h5 class="card-title">{{ $disciplina->name_disciplina }}</h5>                    
                             <a class="stretched-link"></a>
                         </div>
