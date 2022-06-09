@@ -51,7 +51,7 @@ SET default_table_access_method = heap;
 --
 
 CREATE TABLE public.disciplinas (
-    "idDisciplina" character varying(255) NOT NULL,
+    "id_disciplina" character varying(255) NOT NULL,
     "nameDisciplina" character varying(255) NOT NULL
 );
 
@@ -103,9 +103,9 @@ ALTER SEQUENCE public.migrations_id_seq OWNED BY public.migrations.id;
 --
 
 CREATE TABLE public.modulos (
-    "idModulo" bigint NOT NULL,
+    "id_modulo" bigint NOT NULL,
     modulo character varying(255) NOT NULL,
-    "idDisciplina" character varying(255) NOT NULL
+    "id_disciplina" character varying(255) NOT NULL
 );
 
 
@@ -113,10 +113,10 @@ ALTER TABLE public.modulos OWNER TO postgres;
 
 --
 -- TOC entry 208 (class 1259 OID 18973)
--- Name: modulos_idModulo_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: modulos_id_modulo_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
-CREATE SEQUENCE public."modulos_idModulo_seq"
+CREATE SEQUENCE public."modulos_id_modulo_seq"
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -124,15 +124,15 @@ CREATE SEQUENCE public."modulos_idModulo_seq"
     CACHE 1;
 
 
-ALTER TABLE public."modulos_idModulo_seq" OWNER TO postgres;
+ALTER TABLE public."modulos_id_modulo_seq" OWNER TO postgres;
 
 --
 -- TOC entry 3007 (class 0 OID 0)
 -- Dependencies: 208
--- Name: modulos_idModulo_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: modulos_id_modulo_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
-ALTER SEQUENCE public."modulos_idModulo_seq" OWNED BY public.modulos."idModulo";
+ALTER SEQUENCE public."modulos_id_modulo_seq" OWNED BY public.modulos."id_modulo";
 
 
 --
@@ -146,7 +146,7 @@ CREATE TABLE public.users (
     matricula character varying(255) NOT NULL,
     name character varying(255) NOT NULL,
     picture character varying(255) NOT NULL,
-    "userRole" character varying(255) NOT NULL
+    "user_role" character varying(255) NOT NULL
 );
 
 
@@ -162,10 +162,10 @@ ALTER TABLE ONLY public.migrations ALTER COLUMN id SET DEFAULT nextval('public.m
 
 --
 -- TOC entry 2854 (class 2604 OID 18978)
--- Name: modulos idModulo; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: modulos id_modulo; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.modulos ALTER COLUMN "idModulo" SET DEFAULT nextval('public."modulos_idModulo_seq"'::regclass);
+ALTER TABLE ONLY public.modulos ALTER COLUMN "id_modulo" SET DEFAULT nextval('public."modulos_id_modulo_seq"'::regclass);
 
 
 --
@@ -174,9 +174,9 @@ ALTER TABLE ONLY public.modulos ALTER COLUMN "idModulo" SET DEFAULT nextval('pub
 -- Data for Name: disciplinas; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.disciplinas ("idDisciplina", "nameDisciplina") FROM stdin;
+COPY public.disciplinas ("id_disciplina", "name_disciplina") FROM stdin;
 COMP360	LÓGICA PARA COMPUTAÇÃO
-COMP361	COMPUTAÇÃO
+COMP361	COMPUTAÇÃO, SOCIEDADE E ÉTICA
 COMP362	MATEMÁTICA DISCRETA
 COMP363	CÁLCULO DIFERENCIAL E INTEGRAL
 COMP364	ESTRUTURA DE DADOS
@@ -274,30 +274,30 @@ COPY public.migrations (id, migration, batch) FROM stdin;
 -- Data for Name: modulos; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.modulos ("idModulo", modulo, "idDisciplina") FROM stdin;
-156	1	COMP360
-157	1	COMP361
-158	1	COMP362
-159	1	COMP363
-160	2	COMP364
-161	2	COMP365
-162	2	COMP366
-163	2	COMP367
-164	3	COMP368
-165	3	COMP369
-166	3	COMP370
-167	3	COMP371
-168	4	COMP372
-169	4	COMP373
-170	4	COMP374
-171	4	COMP376
-172	5	COMP378
-173	5	COMP379
-174	5	COMP380
-175	5	COMP381
-176	6	COMP382
-177	7	COMP386
-178	7	COMP387
+COPY public.modulos ("id_modulo", modulo, "id_disciplina") FROM stdin;
+156	1º PERIODO	COMP360
+157	1º PERIODO	COMP361
+158	1º PERIODO	COMP362
+159	1º PERIODO	COMP363
+160	2º PERIODO	COMP364
+161	2º PERIODO	COMP365
+162	2º PERIODO	COMP366
+163	2º PERIODO	COMP367
+164	3º PERIODO	COMP368
+165	3º PERIODO	COMP369
+166	3º PERIODO	COMP370
+167	3º PERIODO	COMP371
+168	4º PERIODO	COMP372
+169	4º PERIODO	COMP373
+170	4º PERIODO	COMP374
+171	4º PERIODO	COMP376
+172	5º PERIODO	COMP378
+173	5º PERIODO	COMP379
+174	5º PERIODO	COMP380
+175	5º PERIODO	COMP381
+176	6º PERIODO	COMP382
+177	7º PERIODO	COMP386
+178	7º PERIODO	COMP387
 179	COMPUTAÇÃO VISUAL	COMP404
 180	SISTEMAS DE INFORMAÇÃO	COMP389
 181	COMPUTAÇÃO VISUAL	COMP390
@@ -314,43 +314,43 @@ COPY public.modulos ("idModulo", modulo, "idDisciplina") FROM stdin;
 192	SISTEMAS INTELIGENTES	COMP401
 193	SISTEMAS DE COMPUTAÇÃO	COMP402
 194	SISTEMAS DE INFORMAÇÃO	COMP403
-195	ELETIVA	CC1941
-196	ELETIVA	CC1942
-197	ELETIVA	CC1943
-198	ELETIVA	CC1944
-199	ELETIVA	CC1945
-200	ELETIVA	CC1946
-201	ELETIVA	CC1947
-202	ELETIVA	CC1948
-203	ELETIVA	CC1949
-204	ELETIVA	CC1950
-205	ELETIVA	CC1951
-206	ELETIVA	CC1952
-207	ELETIVA	CC1953
-208	ELETIVA	CC1954
-209	ELETIVA	CC1955
-210	ELETIVA	CC1956
-211	ELETIVA	CC1957
-212	ELETIVA	CC1958
-213	ELETIVA	CC1959
-214	ELETIVA	CC1960
-215	ELETIVA	CC1961
-216	ELETIVA	CC1962
-217	ELETIVA	CC1963
-218	ELETIVA	CC1964
-219	ELETIVA	CC1965
-220	ELETIVA	CC1966
-221	ELETIVA	CC1967
-222	ELETIVA	CC1968
-223	ELETIVA	COMP405
-224	ELETIVA	COMP406
-225	ELETIVA	COMP407
-226	ELETIVA	COMP409
-227	ELETIVA	COMP410
-228	ELETIVA	COMP411
-229	ELETIVA	COMP412
-230	ELETIVA	COMP413
-231	ELETIVA	COMP414
+195	ELETIVAS	CC1941
+196	ELETIVAS	CC1942
+197	ELETIVAS	CC1943
+198	ELETIVAS	CC1944
+199	ELETIVAS	CC1945
+200	ELETIVAS	CC1946
+201	ELETIVAS	CC1947
+202	ELETIVAS	CC1948
+203	ELETIVAS	CC1949
+204	ELETIVAS	CC1950
+205	ELETIVAS	CC1951
+206	ELETIVAS	CC1952
+207	ELETIVAS	CC1953
+208	ELETIVAS	CC1954
+209	ELETIVAS	CC1955
+210	ELETIVAS	CC1956
+211	ELETIVAS	CC1957
+212	ELETIVAS	CC1958
+213	ELETIVAS	CC1959
+214	ELETIVAS	CC1960
+215	ELETIVAS	CC1961
+216	ELETIVAS	CC1962
+217	ELETIVAS	CC1963
+218	ELETIVAS	CC1964
+219	ELETIVAS	CC1965
+220	ELETIVAS	CC1966
+221	ELETIVAS	CC1967
+222	ELETIVAS	CC1968
+223	ELETIVAS	COMP405
+224	ELETIVAS	COMP406
+225	ELETIVAS	COMP407
+226	ELETIVAS	COMP409
+227	ELETIVAS	COMP410
+228	ELETIVAS	COMP411
+229	ELETIVAS	COMP412
+230	ELETIVAS	COMP413
+231	ELETIVAS	COMP414
 \.
 
 
@@ -360,7 +360,7 @@ COPY public.modulos ("idModulo", modulo, "idDisciplina") FROM stdin;
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.users ("ID", email, matricula, name, picture, "userRole") FROM stdin;
+COPY public.users ("ID", email, matricula, name, picture, "user_role") FROM stdin;
 \.
 
 
@@ -376,10 +376,10 @@ SELECT pg_catalog.setval('public.migrations_id_seq', 4, true);
 --
 -- TOC entry 3009 (class 0 OID 0)
 -- Dependencies: 208
--- Name: modulos_idModulo_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: modulos_id_modulo_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."modulos_idModulo_seq"', 1, false);
+SELECT pg_catalog.setval('public."modulos_id_modulo_seq"', 1, false);
 
 
 --
@@ -388,7 +388,7 @@ SELECT pg_catalog.setval('public."modulos_idModulo_seq"', 1, false);
 --
 
 ALTER TABLE ONLY public.disciplinas
-    ADD CONSTRAINT disciplinas_pkey PRIMARY KEY ("idDisciplina");
+    ADD CONSTRAINT disciplinas_pkey PRIMARY KEY ("id_disciplina");
 
 
 --
@@ -406,7 +406,7 @@ ALTER TABLE ONLY public.migrations
 --
 
 ALTER TABLE ONLY public.modulos
-    ADD CONSTRAINT modulos_pkey PRIMARY KEY ("idModulo");
+    ADD CONSTRAINT modulos_pkey PRIMARY KEY ("id_modulo");
 
 
 --
@@ -438,11 +438,11 @@ ALTER TABLE ONLY public.users
 
 --
 -- TOC entry 2867 (class 2606 OID 18984)
--- Name: modulos modulos_iddisciplina_foreign; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- Name: modulos modulos_id_disciplina_foreign; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.modulos
-    ADD CONSTRAINT modulos_iddisciplina_foreign FOREIGN KEY ("idDisciplina") REFERENCES public.disciplinas("idDisciplina");
+    ADD CONSTRAINT modulos_id_disciplina_foreign FOREIGN KEY ("id_disciplina") REFERENCES public.disciplinas("id_disciplina");
 
 
 -- Completed on 2022-06-08 22:59:37 -03
