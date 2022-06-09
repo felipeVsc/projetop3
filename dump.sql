@@ -52,7 +52,7 @@ SET default_table_access_method = heap;
 
 CREATE TABLE public.disciplinas (
     "id_disciplina" character varying(255) NOT NULL,
-    "nameDisciplina" character varying(255) NOT NULL
+    "name_disciplina" character varying(255) NOT NULL
 );
 
 
