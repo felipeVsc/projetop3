@@ -9,7 +9,7 @@ class Disciplina extends Model
 {
     use HasFactory;
     // Definindo a PK
-    protected $primaryKey = 'idDisciplina';
+    protected $primaryKey = 'id_disciplina';
 
     /*
     idDisciplina vai o codigo da disciplina;
@@ -22,8 +22,7 @@ class Disciplina extends Model
 
     // Evitar que o usuario acesse diretamente o userRole
     protected $fillable = [
-        'idDisciplina',
-        'nameDisciplina'
+        'id_disciplina',
+        'name_disciplina'
     ];
-
 }
