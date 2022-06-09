@@ -12,11 +12,12 @@ class Disciplina extends Model
     protected $primaryKey = 'idDisciplina';
 
     /*
-    idDisciplina vai ser um inteiro autoincrementado;
+    idDisciplina vai o codigo da disciplina;
     Timestamps desligados
     */
-    public $incrementing = true;
+    protected $keyType = 'string';
     public $timestamps = false;
+
     
 
     // Evitar que o usuario acesse diretamente o userRole

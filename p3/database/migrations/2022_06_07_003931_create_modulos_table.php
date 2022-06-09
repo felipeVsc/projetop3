@@ -15,8 +15,10 @@ class CreateModulosTable extends Migration
     public function up()
     {
         Schema::create('modulos', function (Blueprint $table) {
-            $table->string("modulo")->primary();
-            $table->foreignIdFor(Disciplina::class,'idDisciplina');
+            $table->id('idModulo');
+            $table->string('modulo');
+            $table->string('idDisciplina');
+            $table->foreign('idDisciplina')->references('idDisciplina')->on('disciplinas');
         });
     }
 
