@@ -24,7 +24,7 @@ class UserFactory extends Factory
             'matricula' => $this->faker->numberBetween(1,99),
             'name' => $this->faker->name(),
             'picture' => $this->faker->name(),
-            'userRole' => $this->faker->name(),
+            'user_role' => $this->faker->name(),
             
         ];
     }
