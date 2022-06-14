@@ -9,7 +9,7 @@ class Modulo extends Model
 {
     use HasFactory;
     // Definindo a PK
-    protected $primaryKey = 'idModulo';
+    protected $primaryKey = 'id_modulo';
 
     /*
     As proximas duas linhas sao para evitar que ele tente incrementar
@@ -26,6 +26,6 @@ class Modulo extends Model
     // Evitar que o usuario acesse diretamente o userRole
     protected $fillable = [
         'modulo',
-        'idDisciplina'
+        'id_disciplina'
     ];
 }
