@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MainDashboardController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +18,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('basic_component');
 });
 
+Route::get('/home', [MainDashboardController::class, 'index']);
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/profile', function () {
+    return view('complete_profile');
 });
-
-Route::get('/cadastro', function () {
-    return view('cadastro');
-});
-
-

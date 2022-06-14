@@ -30,12 +30,20 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  */
 abstract class ProviderTestCase extends TestCase
 {
+<<<<<<< HEAD
     protected HttpClientInterface $client;
     protected LoggerInterface|MockObject $logger;
     protected string $defaultLocale;
     protected LoaderInterface|MockObject $loader;
     protected XliffFileDumper|MockObject $xliffFileDumper;
     protected TranslatorBagInterface|MockObject $translatorBag;
+=======
+    protected $client;
+    protected $logger;
+    protected string $defaultLocale;
+    protected $loader;
+    protected $xliffFileDumper;
+>>>>>>> 50e92a729d072063c0792c13b71d1020767298a0
 
     abstract public function createProvider(HttpClientInterface $client, LoaderInterface $loader, LoggerInterface $logger, string $defaultLocale, string $endpoint): ProviderInterface;
 
@@ -75,10 +83,13 @@ abstract class ProviderTestCase extends TestCase
     protected function getXliffFileDumper(): XliffFileDumper
     {
         return $this->xliffFileDumper ??= $this->createMock(XliffFileDumper::class);
+<<<<<<< HEAD
     }
 
     protected function getTranslatorBag(): TranslatorBagInterface
     {
         return $this->translatorBag ??= $this->createMock(TranslatorBagInterface::class);
+=======
+>>>>>>> 50e92a729d072063c0792c13b71d1020767298a0
     }
 }

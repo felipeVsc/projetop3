@@ -25,7 +25,11 @@ class DataCollectorTranslator implements TranslatorInterface, TranslatorBagInter
     public const MESSAGE_MISSING = 1;
     public const MESSAGE_EQUALS_FALLBACK = 2;
 
+<<<<<<< HEAD
     private TranslatorInterface $translator;
+=======
+    private $translator;
+>>>>>>> 50e92a729d072063c0792c13b71d1020767298a0
     private array $messages = [];
 
     /**
