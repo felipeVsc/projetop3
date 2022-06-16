@@ -477,3 +477,15 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     align-items: center;
 }
 /* Ends: Complete Profile Specifics */
+.alignMonitor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 1000px;
+}
+.alignItem{
+    display: flex;
+    align-items: center;
+    size: 500px;
+    border-style: ridge;
+}

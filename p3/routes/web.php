@@ -26,3 +26,7 @@ Route::get('/home', [MainDashboardController::class, 'index']);
 Route::get('/profile', function () {
     return view('complete_profile');
 });
+
+Route::get('/monitors',function(){
+    return view('manage_monitors');
+});
