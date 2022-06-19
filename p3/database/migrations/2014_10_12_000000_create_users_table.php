@@ -19,8 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('matricula')->unique();
             $table->string('name');
             $table->string('picture');
-            $table->string('userRole');
-            
+            $table->string('user_role');            
         });
     }
 

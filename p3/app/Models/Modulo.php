@@ -28,4 +28,8 @@ class Modulo extends Model
         'modulo',
         'id_disciplina'
     ];
+
+    public function disciplinas(){
+        return $this->hasMany(Disciplina::class);
+    }
 }

@@ -25,4 +25,9 @@ class Disciplina extends Model
         'id_disciplina',
         'name_disciplina'
     ];
+
+    public function modulos()
+    {
+        return $this->belongsTo(Modulo::class);
+    }
 }

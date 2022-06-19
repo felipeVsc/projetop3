@@ -17,11 +17,10 @@ use App\Http\Controllers\MainDashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('basic_component');
-});
-
+Route::get('/', [MainDashboardController::class, 'index']);
 Route::get('/home', [MainDashboardController::class, 'index']);
+
+Route::get('/teste', [MainDashboardController::class, 'eloquentTest']);
 
 Route::get('/profile', function () {
     return view('complete_profile');
