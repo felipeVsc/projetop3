@@ -16,7 +16,11 @@
         }
     ],
     "require": {
+<<<<<<< HEAD
+        "php": ">=8.1",
+=======
         "php": ">=8.0.2",
+>>>>>>> 50e92a729d072063c0792c13b71d1020767298a0
         "symfony/polyfill-ctype": "~1.8",
         "symfony/polyfill-intl-grapheme": "~1.0",
         "symfony/polyfill-intl-normalizer": "~1.0",

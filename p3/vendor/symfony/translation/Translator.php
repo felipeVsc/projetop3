@@ -22,6 +22,7 @@ use Symfony\Component\Translation\Formatter\MessageFormatter;
 use Symfony\Component\Translation\Formatter\MessageFormatterInterface;
 use Symfony\Component\Translation\Loader\LoaderInterface;
 use Symfony\Contracts\Translation\LocaleAwareInterface;
+use Symfony\Contracts\Translation\TranslatableInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 // Help opcache.preload discover always-needed symbols
@@ -51,7 +52,11 @@ class Translator implements TranslatorInterface, TranslatorBagInterface, LocaleA
 
     private array $resources = [];
 
+<<<<<<< HEAD
+    private MessageFormatterInterface $formatter;
+=======
     private $formatter;
+>>>>>>> 50e92a729d072063c0792c13b71d1020767298a0
 
     private ?string $cacheDir;
 
@@ -59,7 +64,11 @@ class Translator implements TranslatorInterface, TranslatorBagInterface, LocaleA
 
     private array $cacheVary;
 
+<<<<<<< HEAD
+    private ?ConfigCacheFactoryInterface $configCacheFactory;
+=======
     private $configCacheFactory;
+>>>>>>> 50e92a729d072063c0792c13b71d1020767298a0
 
     private array $parentLocales;
 
@@ -193,6 +202,10 @@ class Translator implements TranslatorInterface, TranslatorBagInterface, LocaleA
                 break;
             }
         }
+
+        $parameters = array_map(function ($parameter) use ($locale) {
+            return $parameter instanceof TranslatableInterface ? $parameter->trans($this, $locale) : $parameter;
+        }, $parameters);
 
         $len = \strlen(MessageCatalogue::INTL_DOMAIN_SUFFIX);
         if ($this->hasIntlFormatter

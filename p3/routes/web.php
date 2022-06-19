@@ -25,3 +25,7 @@ Route::get('/teste', [MainDashboardController::class, 'eloquentTest']);
 Route::get('/profile', function () {
     return view('complete_profile');
 });
+
+Route::get('/monitors',function(){
+    return view('manage_monitors');
+});

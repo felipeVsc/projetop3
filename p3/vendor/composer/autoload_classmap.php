@@ -4972,7 +4972,6 @@ return array(
     'Symfony\\Contracts\\Service\\ServiceSubscriberTrait' => $vendorDir . '/symfony/service-contracts/ServiceSubscriberTrait.php',
     'Symfony\\Contracts\\Service\\Test\\ServiceLocatorTest' => $vendorDir . '/symfony/service-contracts/Test/ServiceLocatorTest.php',
     'Symfony\\Contracts\\Translation\\LocaleAwareInterface' => $vendorDir . '/symfony/translation-contracts/LocaleAwareInterface.php',
-    'Symfony\\Contracts\\Translation\\Test\\TranslatorTest' => $vendorDir . '/symfony/translation-contracts/Test/TranslatorTest.php',
     'Symfony\\Contracts\\Translation\\TranslatableInterface' => $vendorDir . '/symfony/translation-contracts/TranslatableInterface.php',
     'Symfony\\Contracts\\Translation\\TranslatorInterface' => $vendorDir . '/symfony/translation-contracts/TranslatorInterface.php',
     'Symfony\\Contracts\\Translation\\TranslatorTrait' => $vendorDir . '/symfony/translation-contracts/TranslatorTrait.php',
